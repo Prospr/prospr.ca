@@ -1,5 +1,8 @@
 ---
-title: Home
 _fieldset: page
-_template: home
+title: Home
+meta_title: ""
+meta_desc: ""
+alt_title: ""
+_template: page
 ---

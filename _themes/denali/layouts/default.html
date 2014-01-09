@@ -6,22 +6,28 @@
   <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ theme:css }}" />
   <link rel="icon" type="image/png" href="{{ theme:img src="favicon.png" }}" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46432355-1', 'prospr.ca');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 <body>
+  <a href="https://plus.google.com/114249210559587112255" rel="publisher" />
   <div class="container">
     <div class="row">
       <section class="span2">
-        <p class="site-name"><a href="{{ homepage }}">{{ _site_name }}</a></p>
-        {{ theme:partial src="nav" }}
-        {{ theme:partial src="category-list" }}
-        {{ theme:partial src="theme-details" }}
       </section>
       <section class="span10">
         {{ layout_content }}
       </section>
     </div>
-  </section>
-</div>
+  </div>
   {{ if include_maps }}
       {{ location:start_maps }}
   {{ endif }}

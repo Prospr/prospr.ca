@@ -1,0 +1,10 @@
+.sass-cache
+.DS_Store
+/_cache/_app/
+/_cache/_add-ons/
+*.log
+/assets/img/cache/
+
+node_modules/ # for grunt users 
+
+# These are some useful ignores for Statamic theme building. #
