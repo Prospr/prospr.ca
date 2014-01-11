@@ -5,4 +5,6 @@
 *.log
 /assets/img/cache/
 
+/_themes/prospr/node_modules/
+
 # These are some useful ignores for Statamic theme building. #
