@@ -27,7 +27,7 @@ _site_name: Prospr
 _content_root: _content
 
 # Used for permalinks
-_site_url: http://statamic.com
+_site_url: http://prospr.ca
 
 # Folder name of your desired theme
 _theme: prospr
@@ -108,6 +108,7 @@ _environments:
     - '*.localip'
   live:
     - '*.com'
+    - '*.ca'
 
 # Set to 'true' if you want to log system messages
 _log_enabled: false

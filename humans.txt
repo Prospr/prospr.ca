@@ -3,15 +3,14 @@
 
 # TEAM
 
-    Gareth Redfern -- @garethredfern
+    Kenzie Rudolph-Wilson : Designer & Developer -- @kenzierw
+    Tom Sims : Copywriter & SEO Expert -- @tomdsims
 
 # THANKS
 
-    Everyone who uses this template!
+    Special thanks to iQliving and Vince Menchella. Without them, we'd never have gotten started.
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     Normalize.css, jQuery
-
-    Source: https://github.com/statamicthemes/statarkers-theme
