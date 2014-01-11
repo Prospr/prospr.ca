@@ -1,4 +1,5 @@
 # Require any additional compass plugins here.
+require "susy"
 
 # Change statarkers to the name of your theme folder:
 http_path = "/_themes/prospr/"
@@ -9,7 +10,6 @@ javascripts_dir = "js"
 fonts_dir = "fonts"
 
 output_style = :nested
-environment = :development
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true
