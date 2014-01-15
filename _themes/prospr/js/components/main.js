@@ -1,10 +1,5 @@
-function test() {
-	return "hello";
-}
-
-function thisIsntEmpty () {
-	var x=1;
-	var y=5;
-	var z = x-y;
-	return z;
-}
+$(function() {
+    var BV = new $.BigVideo();
+    BV.init();
+    BV.show('/assets/vid/toronto.mp4',{ambient:true});
+});

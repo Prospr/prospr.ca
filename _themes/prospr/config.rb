@@ -21,7 +21,7 @@ color_output = false
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:
 # preferred_syntax = :sass
-# and then run from within the 'statarkers' folder (and no deeper):
+# and then run from within the 'prospr' folder (and no deeper):
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 # sass lovers must then remember to comment out the line below:
 preferred_syntax = :scss

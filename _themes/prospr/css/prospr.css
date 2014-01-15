@@ -370,28 +370,37 @@ table {
 /* line 11, ../sass/_base.scss */
 body {
   line-height: 1.5;
-  color: #404040; }
+  color: #093844;
+  font-family: proxima-nova, sans-serif;
+  font-size: 100%;
+  background: black; }
 
-/* line 15, ../sass/_base.scss */
+/* line 19, ../sass/_base.scss */
 small {
   display: block;
   text-align: center; }
 
-/* line 19, ../sass/_base.scss */
+/* line 24, ../sass/_base.scss */
 a {
-  color: black; }
+  color: #093844; }
   /* line 18, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
-    color: black; }
+    color: #093844; }
   /* line 21, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
-    color: #58ec76; }
+    color: #51acce; }
   /* line 24, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
-    color: #58ec76; }
+    color: #51acce; }
   /* line 27, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
-    color: #58ec76; }
+    color: #51acce; }
+
+/* line 28, ../sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: white;
+  font-weight: 400; }
 
 /* line 9, ../sass/_layout.scss */
 * {
@@ -401,23 +410,242 @@ a {
 
 /* line 12, ../sass/_layout.scss */
 .container {
-  margin: 0 auto;
-  padding: 0 1em;
-  max-width: 40em; }
+  *zoom: 1;
+  max-width: 71em;
+  _width: 71em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  /* line 38, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /* line 17, ../sass/_layout.scss */
 header[role="banner"] {
-  padding: 2em 0; }
+  position: relative; }
 
-/* line 18, ../sass/_layout.scss */
+/* line 20, ../sass/_layout.scss */
 footer[role="contentinfo"] {
-  padding: 2em; }
+  padding: 2em 0; }
 
 /* line 12, ../sass/_modules.scss */
 .pagination {
   text-align: center; }
 
+/* line 14, ../sass/_modules.scss */
+header[role="banner"] {
+  background-color: rgba(0, 0, 0, 0.3); }
+  /* line 17, ../sass/_modules.scss */
+  header[role="banner"] #brand {
+    width: 40.84507%;
+    float: left;
+    margin-right: 1.40845%;
+    display: inline; }
+    /* line 20, ../sass/_modules.scss */
+    header[role="banner"] #brand h1 {
+      float: left;
+      margin-top: 0.65em; }
+      /* line 24, ../sass/_modules.scss */
+      header[role="banner"] #brand h1 a {
+        width: 100%;
+        font-size: 1.75em;
+        line-height: 1.3;
+        text-decoration: none;
+        color: white; }
+    /* line 32, ../sass/_modules.scss */
+    header[role="banner"] #brand object {
+      float: left;
+      margin-left: 2em;
+      width: 6.25em;
+      /* 100px/16px */
+      height: 4.6875em;
+      /* 75px/16px */ }
+  /* line 40, ../sass/_modules.scss */
+  header[role="banner"] nav[role="navigation"] {
+    width: 57.74648%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline; }
+    /* line 43, ../sass/_modules.scss */
+    header[role="banner"] nav[role="navigation"] ul.nav {
+      overflow: hidden;
+      *zoom: 1;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      overflow: hidden;
+      *zoom: 1;
+      float: right;
+      padding: 0;
+      margin-top: 3.25em; }
+      /* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+      header[role="banner"] nav[role="navigation"] ul.nav li {
+        list-style-image: none;
+        list-style-type: none;
+        margin-left: 0;
+        white-space: nowrap;
+        display: inline;
+        float: left;
+        padding-left: 1em;
+        padding-right: 1em; }
+        /* line 48, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+        header[role="banner"] nav[role="navigation"] ul.nav li:first-child, header[role="banner"] nav[role="navigation"] ul.nav li.first {
+          padding-left: 0; }
+        /* line 49, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+        header[role="banner"] nav[role="navigation"] ul.nav li:last-child {
+          padding-right: 0; }
+        /* line 50, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+        header[role="banner"] nav[role="navigation"] ul.nav li.last {
+          padding-right: 0; }
+      /* line 51, ../sass/_modules.scss */
+      header[role="banner"] nav[role="navigation"] ul.nav li a {
+        -webkit-transition: all, ease, 0.2s;
+        -moz-transition: all, ease, 0.2s;
+        -o-transition: all, ease, 0.2s;
+        transition: all, ease, 0.2s;
+        color: white;
+        font-size: 1.3em;
+        font-weight: 300;
+        text-decoration: none;
+        border-bottom: solid 1px rgba(255, 255, 255, 0); }
+        /* line 58, ../sass/_modules.scss */
+        header[role="banner"] nav[role="navigation"] ul.nav li a:hover {
+          border-bottom: solid 1px white; }
+      /* line 62, ../sass/_modules.scss */
+      header[role="banner"] nav[role="navigation"] ul.nav li a.current {
+        color: #ec5f34; }
+        /* line 64, ../sass/_modules.scss */
+        header[role="banner"] nav[role="navigation"] ul.nav li a.current:hover {
+          border-bottom: solid 1px #ec5f34; }
+
 @media all and (max-width: 27em) {
   /* line 11, ../sass/_states.scss */
   body {
     font-size: 0.875em; } }
+/*  BigVideo Styles 
+  You may need to adjust these styles to get this working right in your design. 
+*/
+/* line 4, ../sass/_shame.scss */
+#big-video-wrap {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+/* line 5, ../sass/_shame.scss */
+#big-video-vid, #big-video-image {
+  position: absolute; }
+
+/* line 6, ../sass/_shame.scss */
+#big-video-control-container {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s; }
+
+/* line 8, ../sass/_shame.scss */
+#big-video-control {
+  width: 100%;
+  height: 16px;
+  position: relative; }
+
+/* line 9, ../sass/_shame.scss */
+#big-video-control-middle {
+  margin: 0 56px 0 24px; }
+
+/* line 10, ../sass/_shame.scss */
+#big-video-control-bar {
+  width: 100%;
+  height: 16px;
+  position: relative;
+  cursor: pointer; }
+
+/* line 11, ../sass/_shame.scss */
+#big-video-control-progress {
+  position: absolute;
+  top: 7px;
+  height: 3px;
+  width: 0%;
+  background: #fff; }
+
+/* line 12, ../sass/_shame.scss */
+#big-video-control-track {
+  position: absolute;
+  top: 8px;
+  height: 1px;
+  width: 100%;
+  background: #fff; }
+
+/* line 13, ../sass/_shame.scss */
+#big-video-control-bound-left {
+  left: 0; }
+
+/* line 14, ../sass/_shame.scss */
+#big-video-control-bound-right {
+  right: -1px; }
+
+/* line 15, ../sass/_shame.scss */
+#big-video-control-track .ui-slider-handle {
+  opacity: 0; }
+
+/* line 16, ../sass/_shame.scss */
+#big-video-control-playhead {
+  left: 30%; }
+
+/* line 17, ../sass/_shame.scss */
+#big-video-control-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-image: url("bigvideo.png"); }
+
+/* line 18, ../sass/_shame.scss */
+#big-video-control-timer {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  color: #fff;
+  font-size: 11px; }
+
+/* line 19, ../sass/_shame.scss */
+#big-video-control-playhead, #big-video-control-bound-left, #big-video-control-bound-right {
+  position: absolute;
+  top: 0;
+  height: 16px;
+  width: 1px;
+  background: #fff; }
+
+/* line 20, ../sass/_shame.scss */
+#big-video-control .ui-slider-handle {
+  border-left: solid 1px #fff;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -8px; }
+
+/* line 21, ../sass/_shame.scss */
+.transparent {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0; }
+
+/* line 22, ../sass/_shame.scss */
+.vjs-big-play-button {
+  display: none !important; }

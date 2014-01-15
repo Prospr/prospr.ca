@@ -5,10 +5,10 @@
 ###########################################################################################
 
 # Theme name
-theme_name: Statarkers
+theme_name: Prospr
 
 # Theme Tag Line
-tag_line: "A bare-bones Statamic theme"
+tag_line: "Grow your website."
 
 # Comments + Disqus
 disqus_account: changeme
@@ -21,8 +21,8 @@ blog_name: blog
 no_results_text: "Sorry, no results found."
 
 # Site Description
-site_desc: "Enter a description which will display in your home page meta description and RSS feed."
+site_desc: "Helping small businesses grow in Toronto, ON"
 
 # Contact Details
-contact_name: Gareth Redfern
-contact_email: gareth@garethredfern.com
+contact_name: Kenzie Rudolph-Wilson
+contact_email: kenzie@prospr.ca

@@ -1,1 +1,1 @@
-function test(){return"hello"}function thisIsntEmpty(){var a=1,b=5,c=a-b;return c}
+$(function(){var a=new $.BigVideo;a.init(),a.show("/assets/vid/toronto.mp4",{ambient:!0})});

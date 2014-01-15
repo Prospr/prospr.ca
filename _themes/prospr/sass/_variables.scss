@@ -7,7 +7,6 @@
 // ===================
 
 // greyscale
-
 $black: rgb(0, 0, 0);
 $darkGrey: lighten($black, 25%);
 $grey: lighten($black, 50%);
@@ -16,14 +15,32 @@ $lighterGrey: lighten($black, 90%);
 $white: rgb(255, 255, 255);
 
 // site colours
-
-$mainColor: rgb(45, 53, 56);
-$compColor: rgb(88, 236, 118);
+$ochre: #d94214;
+$cream: #fff2c1;
+$seagreen: #80a894;
+$greygreen: #52736b;
+$darkblue: #093844;
+$lightblue: #51acce;
 
 // links
+$normal: $darkblue;
+$hover: $lightblue;
+$active: $lightblue;
+$visited: $darkblue;
+$focus: $lightblue;
 
-$normal: $black;
-$hover: $compColor;
-$active: $compColor;
-$visited: $black;
-$focus: $compColor;
+
+//fonts
+$proxima: proxima-nova, sans-serif;
+$tisa: ff-tisa-web-pro, serif;
+
+// susy
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 5em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+// susy breakpoints
+$small: 30em;
+$medium: 47em;
+$large: 75em;

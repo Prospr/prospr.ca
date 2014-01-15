@@ -1,9 +1,9 @@
 <header role="banner">
   <div class="container">
-    <h1><a href="{{ _site_url }}">{{ _site_name }}</a></h1>
-    {{ if tag_line }}
-    <h2>{{ tag_line }}</h2>
-    {{ endif }}
+    <div id="brand">
+      <h1><a href="{{ _site_url }}">PROSPR</a></h1>
+      <a href="{{ _site_url }}"><object type="image/svg+xml" data="/assets/img/negative-logo.svg"></object></a>
+    </div>
     {{ theme:partial src="_nav" }}
   </div><!-- END .container -->
 </header>
@@ -18,3 +18,4 @@ This is the main header partial.
 For more information on partials see http://statamic.com/learn/theming/partials.
   
 #}}
+

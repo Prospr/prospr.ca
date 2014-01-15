@@ -9,13 +9,24 @@
 // It is defining the default styling for how that element should look in all occurrences on the page.
 
 body {
-  line-height: 1.5;
-  color: $darkGrey;
+	line-height: 1.5;
+	color: $darkblue;
+	font-family: $proxima;
+  font-size: 100%;
+  background: $black;
 }
+
 small {
-  display: block;
-  text-align: center;
+	display: block;
+	text-align: center;
 }
+
 a {
-  @include link-colors($normal, $hover, $active, $visited, $focus);
+	@include link-colors($normal, $hover, $active, $visited, $focus);
+}
+
+#{headings()}{
+	margin: 0;
+	color: $white;
+	font-weight: 400;
 }

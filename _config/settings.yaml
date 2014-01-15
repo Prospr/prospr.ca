@@ -64,7 +64,7 @@ _taxonomy_force_lowercase: true
 #  - textile
 #  - html
 #  - txt
-_content_type: markdown
+_content_type: html
 
 # enable SmartyPants to translate plain punctuation into “smart” HTML entities
 _enable_smartypants: true
@@ -111,7 +111,7 @@ _environments:
     - '*.ca'
 
 # Set to 'true' if you want to log system messages
-_log_enabled: false
+_log_enabled: true
 
 # What's the least-serious level of message you wish to record to the log?
 # Your available options:
@@ -121,7 +121,7 @@ _log_enabled: false
 #  - error
 #  - fatal  (this is the most-serious level of logged message)
 # Levels less-serious than what you pick will be ignored
-_log_level: info
+_log_level: debug
 
 # Path to your log file
 #  - to define a path absolutely, start your path with a /

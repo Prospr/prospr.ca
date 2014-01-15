@@ -1,11 +1,15 @@
 //======================================
-// STATAMIC.SCSS
+// PROSPR.SCSS
 //======================================
 
+// SASS Style Guide -- http://css-tricks.com/sass-style-guide/ //
+
 // ==========================
-// COMPASS, VARIABLES, MIXINS
+// COMPASS, SUSY, VARIABLES, MIXINS
 // ==========================
 @import "compass";
+@import "compass/layout"; //remove for live
+@import "susy";
 @import "variables";
 @import "mixins";
 
@@ -39,3 +43,7 @@
 // =================
 @import "ie";
 
+// ================
+// QUICK FIXES
+// ================
+@import "shame";
