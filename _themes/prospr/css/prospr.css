@@ -590,6 +590,10 @@ header[role="banner"] {
 /* line 105, ../sass/_modules.scss */
 .mp-line1 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all, ease, 0.5s;
+  -moz-transition: all, ease, 0.5s;
+  -o-transition: all, ease, 0.5s;
+  transition: all, ease, 0.5s;
   margin-top: 2.5em;
   font-family: ff-tisa-web-pro, serif;
   font-weight: 400;
@@ -597,17 +601,21 @@ header[role="banner"] {
   font-size: 3em;
   text-align: center; }
 
-/* line 115, ../sass/_modules.scss */
+/* line 116, ../sass/_modules.scss */
 .mp-line2 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all, ease, 0.5s;
+  -moz-transition: all, ease, 0.5s;
+  -o-transition: all, ease, 0.5s;
+  transition: all, ease, 0.5s;
   font-weight: 300;
   color: #15829e;
   font-size: 4.5em;
   line-height: 1.2;
   text-align: center; }
 
-/* line 124, ../sass/_modules.scss */
-a.mp-scroll-button {
+/* line 126, ../sass/_modules.scss */
+a#mp-scroll-button {
   color: white;
   text-decoration: none;
   font-size: 1.5em;
@@ -620,11 +628,11 @@ a.mp-scroll-button {
   -moz-transition: all, ease, 0.2s;
   -o-transition: all, ease, 0.2s;
   transition: all, ease, 0.2s; }
-  /* line 133, ../sass/_modules.scss */
-  a.mp-scroll-button i {
+  /* line 135, ../sass/_modules.scss */
+  a#mp-scroll-button i {
     margin-left: 0.33em; }
-  /* line 137, ../sass/_modules.scss */
-  a.mp-scroll-button:hover {
+  /* line 139, ../sass/_modules.scss */
+  a#mp-scroll-button:hover {
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
     -moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);

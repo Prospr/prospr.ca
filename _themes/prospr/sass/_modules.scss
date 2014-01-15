@@ -104,6 +104,7 @@ header[role="banner"]{
 
 .mp-line1 {
 	@include single-text-shadow(rgba($black, 0.5), 1px, 1px, 5px);
+	@include transition(all, ease, 0.5s);
 	margin-top: 2.5em;
 	font-family: $tisa;
 	font-weight: 400;
@@ -114,6 +115,7 @@ header[role="banner"]{
 
 .mp-line2 {
 	@include single-text-shadow(rgba($black, 0.5), 1px, 1px, 5px);
+	@include transition(all, ease, 0.5s);
 	font-weight: 300;
 	color: lighten($darkblue, 20%);
 	font-size: 4.5em;
