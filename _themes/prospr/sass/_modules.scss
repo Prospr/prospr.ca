@@ -43,11 +43,17 @@ header[role="banner"]{
 		ul.nav {
 			@include clearfix;
 			@include horizontal-list(1em, left);
+			@media screen and (max-width: 875px){
+				@include horizontal-list(0.5em, left);
+				margin-top: 3.25em;
+			}
 			float: right;
 			padding: 0;
 			margin-top: 3.25em;
 
 			li {
+				@include transition(all, ease, 0.3s);
+
 				a {
 					@include transition(all, ease, 0.2s);
 					color: $white;
@@ -69,3 +75,67 @@ header[role="banner"]{
 		} //ul.nav
 	}
 } //header[role="banner"]
+
+
+// =====================================
+// FRONTPAGE
+// =====================================
+
+#mp-headline {
+	@include clearfix;
+	@include transition(all, ease, 0.5s);
+	font-size: 6em;
+	font-weight: 700;
+	margin-top: 10%;
+	text-align: left;
+
+	@media screen and (max-height: 550px){
+		line-height: 1.2;
+		font-size: 5em;
+	}
+	@media screen and (max-height: 350px){
+		font-size: 3em;
+	}
+
+	span {
+		color: $ochre;
+	}
+}
+
+.mp-line1 {
+	@include single-text-shadow(rgba($black, 0.5), 1px, 1px, 5px);
+	margin-top: 2.5em;
+	font-family: $tisa;
+	font-weight: 400;
+	color: $white;
+	font-size: 3em;
+	text-align: center;
+}
+
+.mp-line2 {
+	@include single-text-shadow(rgba($black, 0.5), 1px, 1px, 5px);
+	font-weight: 300;
+	color: lighten($darkblue, 20%);
+	font-size: 4.5em;
+	line-height: 1.2;
+	text-align: center;
+}
+
+a.mp-scroll-button {
+	color: $white;
+	text-decoration: none;
+	font-size: 1.5em;
+	border: solid 2px $white;
+	padding: 0.5em 1em 0.4em 1em;
+	@include border-radius (5px, 5px);
+	@include transition(all, ease, 0.2s);
+
+	i {
+		margin-left: 0.33em;
+	}
+
+	&:hover {
+		@include single-text-shadow (rgba($white, 0.5), 0px, 0px, 5px);
+		@include single-box-shadow (rgba($white, 0.5), 0px, 0px, 5px);
+	}
+}

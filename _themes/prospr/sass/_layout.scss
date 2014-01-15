@@ -17,6 +17,10 @@
 header[role="banner"] {
 	position: relative;
 }
+section[role="main"]{
+	position: relative;
+	text-align: center;
+}
 footer[role="contentinfo"] {
 	padding: 2em 0;
 }
