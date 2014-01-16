@@ -60,50 +60,36 @@ nav[role="navigation"]{
 				text-decoration: none;
 				border-bottom: solid 1px rgba($white, 0);
 				&:hover {
-					border-bottom: solid 1px $white;
+					color: lighten($ochre, 10%) !important; /* Important flag to prevent skrollr from changing it back to white */
 				}
 			}
 			a.current {
-				color: lighten($ochre, 10%);
-				&:hover {
-					border-bottom: solid 1px lighten($ochre, 10%);
-				} // a:hover
+				color: lighten($ochre, 10%) !important; /* Important flag to prevent skrollr from changing it back to white */
 			} //a
 		} //li
 	} //ul.nav
 } //nav[role="navigation"]
 
-
+footer[role="contentinfo"]{
+	color: $white;
+	a {
+		color: $white;
+	}
+}
 // =====================================
 // FRONTPAGE
 // =====================================
 
-.slide {
-    background-attachment: fixed;
-    width:100%;
-    height:100%;
-    position: relative;
-}
-
-section[role="main"]{
-	@media screen and (max-width: 1150px){
-		font-size: 0.85em;
-	}
-	@media screen and (max-width: 875px){
-		font-size: 0.75em;
-	}
-	background-color: rgba($black, 0.4);
-}
-
 #mp-splash {
 	width:100%;
-	height:100%;
+	height:100%; 
 	text-align: center;
 
 	.wrapper {
 		position: fixed;
 		width: 100%;
 		height: 100%;
+		background-color: rgba($black, 0.4);
 	}
 
 	#mp-headline {
@@ -112,7 +98,8 @@ section[role="main"]{
 		font-size: 5em;
 		font-weight: 700;
 		text-align: left;
-		padding-top: 2em;
+		padding-top: 2.75em;
+		color: $white;
 
 		@media screen and (max-width: 300px){
 			font-size: 2em;
@@ -141,7 +128,7 @@ section[role="main"]{
 		@include single-text-shadow(rgba($black, 0.5), 1px, 1px, 5px);
 		@include transition(all, ease, 0.5s);
 		font-weight: 300;
-		color: lighten($darkblue, 20%);
+		color: $white;
 		font-size: 4em;
 		line-height: 1.2;
 	}
@@ -171,11 +158,137 @@ section[role="main"]{
 }
 
 #mp-intro {
-	background: $white;
+	background: lighten($cream, 7%);
 	text-align: center;
 	position: relative;
 
 	h2 {
+		color: $greygreen;
+		font-family: $tisa;
+		padding-top: 0.4em;
+		font-size: 2.5em;
+	}
+
+	h3 {
+		color: $seagreen;
+		font-family: $proxima;
+		font-weight: 300;
+		font-size: 2.5em;
+		line-height: 1.2;
+		padding-bottom: 0.4em;
+		border-bottom: dashed 1px rgba($seagreen, 0.5);
+		margin-bottom: 1em;
+	}
+
+	h4 {
 		color: $darkblue;
+		font-family: $tisa;
+		font-size: 1.5em;
+	}
+
+	h5 {
+		color: $darkblue;
+		font-family: $proxima;
+		font-weight: 300;
+		font-size: 1.3em;
+	}
+
+	.intro-content div {
+		padding: 0 2em;
+		margin-bottom: 2em;
+	}
+
+	#growth {
+		@include span-columns(6, 12);
+		border-right: dashed 1px rgba($seagreen, 0.5);
+	}
+
+	#promote {
+		@include span-columns(6 omega, 12);
+	}
+
+	#honesty {
+		@include span-columns(4, 12);
+	}
+
+	#accountability {
+		@include span-columns(4, 12);
+	}
+
+	#contracts {
+		@include span-columns(4 omega, 12);
+	}
+}
+
+#mp-testimonial {
+	position: relative;
+	background: rgba($darkblue, .65);
+
+	div {
+		text-align: center;
+		font-family: $proxima;
+		font-weight: 300;
+	 	color: $white;
+	 	padding: 3em 6em;
+
+	 	p {
+	 		@include clearfix;
+			margin: 0;
+			font-size: 1.5em;
+	 	}
+
+	 	b {
+			display: block;
+			float: right;
+			font-size: 1.5em;
+			margin-top: 0.5em;
+			font-weight: 100;
+		}
+	}
+}
+
+#mp-contact {
+	position: relative;
+	background: lighten($cream, 7%);
+	text-align: center;
+
+	h2 {
+		color: $greygreen;
+		font-family: $tisa;
+		padding-top: 0.4em;
+		font-size: 2.5em;
+	}
+
+	h3 {
+		color: $seagreen;
+		font-family: $proxima;
+		font-weight: 300;
+		font-size: 2.5em;
+		line-height: 1.2;
+		padding-bottom: 0.4em;
+		border-bottom: dashed 1px rgba($seagreen, 0.5);
+		margin-bottom: 1em;
+	}
+
+	h4 {
+		color: $darkblue;
+		font-family: $tisa;
+		font-size: 2em;
+	}
+
+	a {
+		text-decoration: none;
+		color: $greygreen;
+		font-size: 2em;
+		display: block;
+		margin-bottom: 1em;
+	}
+
+	.call-us {
+		@include span-columns(6,12);
+	}
+
+	.email-us {
+		@include span-columns(6 omega, 12);
 	}
 }

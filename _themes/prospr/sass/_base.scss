@@ -16,6 +16,10 @@ body {
   background: $black;
 }
 
+body, html {
+	height: 100%;
+}
+
 small {
 	display: block;
 	text-align: center;
@@ -27,6 +31,6 @@ a {
 
 #{headings()}{
 	margin: 0;
-	color: $white;
+	color: $darkblue;
 	font-weight: 400;
 }

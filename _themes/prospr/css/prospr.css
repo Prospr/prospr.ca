@@ -376,11 +376,15 @@ body {
   background: black; }
 
 /* line 19, ../sass/_base.scss */
+body, html {
+  height: 100%; }
+
+/* line 23, ../sass/_base.scss */
 small {
   display: block;
   text-align: center; }
 
-/* line 24, ../sass/_base.scss */
+/* line 28, ../sass/_base.scss */
 a {
   color: #093844; }
   /* line 18, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
@@ -396,10 +400,10 @@ a {
   a:active {
     color: #51acce; }
 
-/* line 28, ../sass/_base.scss */
+/* line 32, ../sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  color: white;
+  color: #093844;
   font-weight: 400; }
 
 /* line 9, ../sass/_layout.scss */
@@ -430,14 +434,9 @@ header[role="banner"] {
   width: 100%;
   z-index: 9001; }
 
-/* line 22, ../sass/_layout.scss */
-section[role="main"] {
-  position: relative; }
-
-/* line 25, ../sass/_layout.scss */
+/* line 23, ../sass/_layout.scss */
 footer[role="contentinfo"] {
-  padding: 2em 0;
-  position: relative; }
+  padding: 2em 0; }
 
 /* line 12, ../sass/_modules.scss */
 .pagination {
@@ -545,44 +544,32 @@ nav[role="navigation"] ul.nav {
       border-bottom: solid 1px rgba(255, 255, 255, 0); }
       /* line 62, ../sass/_modules.scss */
       nav[role="navigation"] ul.nav li a:hover {
-        border-bottom: solid 1px white; }
+        color: #ec5f34 !important;
+        /* Important flag to prevent skrollr from changing it back to white */ }
     /* line 66, ../sass/_modules.scss */
     nav[role="navigation"] ul.nav li a.current {
-      color: #ec5f34; }
-      /* line 68, ../sass/_modules.scss */
-      nav[role="navigation"] ul.nav li a.current:hover {
-        border-bottom: solid 1px #ec5f34; }
+      color: #ec5f34 !important;
+      /* Important flag to prevent skrollr from changing it back to white */ }
 
-/* line 81, ../sass/_modules.scss */
-.slide {
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  position: relative; }
+/* line 73, ../sass/_modules.scss */
+footer[role="contentinfo"] {
+  color: white; }
+  /* line 75, ../sass/_modules.scss */
+  footer[role="contentinfo"] a {
+    color: white; }
 
-/* line 88, ../sass/_modules.scss */
-section[role="main"] {
-  background-color: rgba(0, 0, 0, 0.4); }
-  @media screen and (max-width: 1150px) {
-    /* line 88, ../sass/_modules.scss */
-    section[role="main"] {
-      font-size: 0.85em; } }
-  @media screen and (max-width: 875px) {
-    /* line 88, ../sass/_modules.scss */
-    section[role="main"] {
-      font-size: 0.75em; } }
-
-/* line 98, ../sass/_modules.scss */
+/* line 83, ../sass/_modules.scss */
 #mp-splash {
   width: 100%;
   height: 100%;
   text-align: center; }
-  /* line 103, ../sass/_modules.scss */
+  /* line 88, ../sass/_modules.scss */
   #mp-splash .wrapper {
     position: fixed;
     width: 100%;
-    height: 100%; }
-  /* line 109, ../sass/_modules.scss */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); }
+  /* line 95, ../sass/_modules.scss */
   #mp-splash #mp-headline {
     overflow: hidden;
     *zoom: 1;
@@ -593,19 +580,20 @@ section[role="main"] {
     font-size: 5em;
     font-weight: 700;
     text-align: left;
-    padding-top: 2em; }
+    padding-top: 2.75em;
+    color: white; }
     @media screen and (max-width: 300px) {
-      /* line 109, ../sass/_modules.scss */
+      /* line 95, ../sass/_modules.scss */
       #mp-splash #mp-headline {
         font-size: 2em;
         text-align: center; }
-        /* line 120, ../sass/_modules.scss */
+        /* line 107, ../sass/_modules.scss */
         #mp-splash #mp-headline span {
           display: block; } }
-    /* line 125, ../sass/_modules.scss */
+    /* line 112, ../sass/_modules.scss */
     #mp-splash #mp-headline span {
       color: #d94214; }
-  /* line 130, ../sass/_modules.scss */
+  /* line 117, ../sass/_modules.scss */
   #mp-splash .mp-line1 {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     -webkit-transition: all, ease, 0.5s;
@@ -617,7 +605,7 @@ section[role="main"] {
     font-weight: 400;
     color: white;
     font-size: 3em; }
-  /* line 140, ../sass/_modules.scss */
+  /* line 127, ../sass/_modules.scss */
   #mp-splash .mp-line2 {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     -webkit-transition: all, ease, 0.5s;
@@ -625,10 +613,10 @@ section[role="main"] {
     -o-transition: all, ease, 0.5s;
     transition: all, ease, 0.5s;
     font-weight: 300;
-    color: #15829e;
+    color: white;
     font-size: 4em;
     line-height: 1.2; }
-  /* line 149, ../sass/_modules.scss */
+  /* line 136, ../sass/_modules.scss */
   #mp-splash a#mp-scroll-button {
     color: white;
     text-decoration: none;
@@ -646,24 +634,157 @@ section[role="main"] {
     -moz-transition: all, ease, 0.2s;
     -o-transition: all, ease, 0.2s;
     transition: all, ease, 0.2s; }
-    /* line 162, ../sass/_modules.scss */
+    /* line 149, ../sass/_modules.scss */
     #mp-splash a#mp-scroll-button i {
       margin-left: 0.33em; }
-    /* line 166, ../sass/_modules.scss */
+    /* line 153, ../sass/_modules.scss */
     #mp-splash a#mp-scroll-button:hover {
       text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
       -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
       -moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
       box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); }
 
-/* line 173, ../sass/_modules.scss */
+/* line 160, ../sass/_modules.scss */
 #mp-intro {
-  background: white;
+  background: #fff9e5;
   text-align: center;
   position: relative; }
-  /* line 178, ../sass/_modules.scss */
+  /* line 165, ../sass/_modules.scss */
   #mp-intro h2 {
-    color: #093844; }
+    color: #52736b;
+    font-family: ff-tisa-web-pro, serif;
+    padding-top: 0.4em;
+    font-size: 2.5em; }
+  /* line 172, ../sass/_modules.scss */
+  #mp-intro h3 {
+    color: #80a894;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+    line-height: 1.2;
+    padding-bottom: 0.4em;
+    border-bottom: dashed 1px rgba(128, 168, 148, 0.5);
+    margin-bottom: 1em; }
+  /* line 183, ../sass/_modules.scss */
+  #mp-intro h4 {
+    color: #093844;
+    font-family: ff-tisa-web-pro, serif;
+    font-size: 1.5em; }
+  /* line 189, ../sass/_modules.scss */
+  #mp-intro h5 {
+    color: #093844;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-size: 1.3em; }
+  /* line 196, ../sass/_modules.scss */
+  #mp-intro .intro-content div {
+    padding: 0 2em;
+    margin-bottom: 2em; }
+  /* line 201, ../sass/_modules.scss */
+  #mp-intro #growth {
+    width: 49.29577%;
+    float: left;
+    margin-right: 1.40845%;
+    display: inline;
+    border-right: dashed 1px rgba(128, 168, 148, 0.5); }
+  /* line 206, ../sass/_modules.scss */
+  #mp-intro #promote {
+    width: 49.29577%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline; }
+  /* line 210, ../sass/_modules.scss */
+  #mp-intro #honesty {
+    width: 32.39437%;
+    float: left;
+    margin-right: 1.40845%;
+    display: inline; }
+  /* line 214, ../sass/_modules.scss */
+  #mp-intro #accountability {
+    width: 32.39437%;
+    float: left;
+    margin-right: 1.40845%;
+    display: inline; }
+  /* line 218, ../sass/_modules.scss */
+  #mp-intro #contracts {
+    width: 32.39437%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline; }
+
+/* line 223, ../sass/_modules.scss */
+#mp-testimonial {
+  position: relative;
+  background: rgba(9, 56, 68, 0.65); }
+  /* line 227, ../sass/_modules.scss */
+  #mp-testimonial div {
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    color: white;
+    padding: 3em 6em; }
+    /* line 234, ../sass/_modules.scss */
+    #mp-testimonial div p {
+      overflow: hidden;
+      *zoom: 1;
+      margin: 0;
+      font-size: 1.5em; }
+    /* line 240, ../sass/_modules.scss */
+    #mp-testimonial div b {
+      display: block;
+      float: right;
+      font-size: 1.5em;
+      margin-top: 0.5em;
+      font-weight: 100; }
+
+/* line 250, ../sass/_modules.scss */
+#mp-contact {
+  position: relative;
+  background: #fff9e5;
+  text-align: center; }
+  /* line 255, ../sass/_modules.scss */
+  #mp-contact h2 {
+    color: #52736b;
+    font-family: ff-tisa-web-pro, serif;
+    padding-top: 0.4em;
+    font-size: 2.5em; }
+  /* line 262, ../sass/_modules.scss */
+  #mp-contact h3 {
+    color: #80a894;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+    line-height: 1.2;
+    padding-bottom: 0.4em;
+    border-bottom: dashed 1px rgba(128, 168, 148, 0.5);
+    margin-bottom: 1em; }
+  /* line 273, ../sass/_modules.scss */
+  #mp-contact h4 {
+    color: #093844;
+    font-family: ff-tisa-web-pro, serif;
+    font-size: 2em; }
+  /* line 279, ../sass/_modules.scss */
+  #mp-contact a {
+    text-decoration: none;
+    color: #52736b;
+    font-size: 2em;
+    display: block;
+    margin-bottom: 1em; }
+  /* line 287, ../sass/_modules.scss */
+  #mp-contact .call-us {
+    width: 49.29577%;
+    float: left;
+    margin-right: 1.40845%;
+    display: inline; }
+  /* line 291, ../sass/_modules.scss */
+  #mp-contact .email-us {
+    width: 49.29577%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline; }
 
 @media all and (max-width: 27em) {
   /* line 11, ../sass/_states.scss */
