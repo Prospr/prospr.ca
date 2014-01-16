@@ -402,6 +402,10 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   font-weight: 400; }
 
+/* line 34, ../sass/_base.scss */
+.text-center {
+  text-align: center; }
+
 /* line 9, ../sass/_layout.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -430,10 +434,9 @@ header[role="banner"] {
 
 /* line 20, ../sass/_layout.scss */
 section[role="main"] {
-  position: relative;
-  text-align: center; }
+  position: relative; }
 
-/* line 24, ../sass/_layout.scss */
+/* line 23, ../sass/_layout.scss */
 footer[role="contentinfo"] {
   padding: 2em 0; }
 
@@ -441,27 +444,31 @@ footer[role="contentinfo"] {
 .pagination {
   text-align: center; }
 
-/* line 14, ../sass/_modules.scss */
+/* line 13, ../sass/_modules.scss */
+.text-center {
+  text-align: center; }
+
+/* line 15, ../sass/_modules.scss */
 header[role="banner"] {
-  background-color: rgba(0, 0, 0, 0.3); }
-  /* line 17, ../sass/_modules.scss */
+  background-color: rgba(0, 0, 0, 0.4); }
+  /* line 18, ../sass/_modules.scss */
   header[role="banner"] #brand {
     width: 40.84507%;
     float: left;
     margin-right: 1.40845%;
     display: inline; }
-    /* line 20, ../sass/_modules.scss */
+    /* line 21, ../sass/_modules.scss */
     header[role="banner"] #brand h1 {
       float: left;
       margin-top: 0.65em; }
-      /* line 24, ../sass/_modules.scss */
+      /* line 25, ../sass/_modules.scss */
       header[role="banner"] #brand h1 a {
         width: 100%;
         font-size: 1.75em;
         line-height: 1.3;
         text-decoration: none;
         color: white; }
-    /* line 32, ../sass/_modules.scss */
+    /* line 33, ../sass/_modules.scss */
     header[role="banner"] #brand object {
       float: left;
       margin-left: 2em;
@@ -469,174 +476,182 @@ header[role="banner"] {
       /* 100px/16px */
       height: 4.6875em;
       /* 75px/16px */ }
-  /* line 40, ../sass/_modules.scss */
-  header[role="banner"] nav[role="navigation"] {
-    width: 57.74648%;
+
+/* line 42, ../sass/_modules.scss */
+nav[role="navigation"] {
+  width: 57.74648%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline; }
+  /* line 45, ../sass/_modules.scss */
+  nav[role="navigation"] ul.nav {
+    overflow: hidden;
+    *zoom: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
     float: right;
-    margin-right: 0;
-    *margin-left: -1em;
-    display: inline; }
-    /* line 43, ../sass/_modules.scss */
-    header[role="banner"] nav[role="navigation"] ul.nav {
-      overflow: hidden;
-      *zoom: 1;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      overflow: hidden;
-      *zoom: 1;
-      float: right;
-      padding: 0;
-      margin-top: 3.25em; }
-      /* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-      header[role="banner"] nav[role="navigation"] ul.nav li {
-        list-style-image: none;
-        list-style-type: none;
-        margin-left: 0;
-        white-space: nowrap;
-        display: inline;
-        float: left;
-        padding-left: 1em;
-        padding-right: 1em; }
-        /* line 48, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-        header[role="banner"] nav[role="navigation"] ul.nav li:first-child, header[role="banner"] nav[role="navigation"] ul.nav li.first {
-          padding-left: 0; }
-        /* line 49, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-        header[role="banner"] nav[role="navigation"] ul.nav li:last-child {
-          padding-right: 0; }
-        /* line 50, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-        header[role="banner"] nav[role="navigation"] ul.nav li.last {
-          padding-right: 0; }
-      @media screen and (max-width: 875px) {
-        /* line 43, ../sass/_modules.scss */
-        header[role="banner"] nav[role="navigation"] ul.nav {
-          margin: 0;
-          padding: 0;
-          border: 0;
-          overflow: hidden;
-          *zoom: 1;
-          margin-top: 3.25em; }
-          /* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-          header[role="banner"] nav[role="navigation"] ul.nav li {
-            list-style-image: none;
-            list-style-type: none;
-            margin-left: 0;
-            white-space: nowrap;
-            display: inline;
-            float: left;
-            padding-left: 0.5em;
-            padding-right: 0.5em; }
-            /* line 48, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-            header[role="banner"] nav[role="navigation"] ul.nav li:first-child, header[role="banner"] nav[role="navigation"] ul.nav li.first {
-              padding-left: 0; }
-            /* line 49, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-            header[role="banner"] nav[role="navigation"] ul.nav li:last-child {
-              padding-right: 0; }
-            /* line 50, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-            header[role="banner"] nav[role="navigation"] ul.nav li.last {
-              padding-right: 0; } }
-      /* line 54, ../sass/_modules.scss */
-      header[role="banner"] nav[role="navigation"] ul.nav li {
-        -webkit-transition: all, ease, 0.3s;
-        -moz-transition: all, ease, 0.3s;
-        -o-transition: all, ease, 0.3s;
-        transition: all, ease, 0.3s; }
-        /* line 57, ../sass/_modules.scss */
-        header[role="banner"] nav[role="navigation"] ul.nav li a {
-          -webkit-transition: all, ease, 0.2s;
-          -moz-transition: all, ease, 0.2s;
-          -o-transition: all, ease, 0.2s;
-          transition: all, ease, 0.2s;
-          color: white;
-          font-size: 1.3em;
-          font-weight: 300;
-          text-decoration: none;
-          border-bottom: solid 1px rgba(255, 255, 255, 0); }
-          /* line 64, ../sass/_modules.scss */
-          header[role="banner"] nav[role="navigation"] ul.nav li a:hover {
-            border-bottom: solid 1px white; }
-        /* line 68, ../sass/_modules.scss */
-        header[role="banner"] nav[role="navigation"] ul.nav li a.current {
-          color: #ec5f34; }
-          /* line 70, ../sass/_modules.scss */
-          header[role="banner"] nav[role="navigation"] ul.nav li a.current:hover {
-            border-bottom: solid 1px #ec5f34; }
+    padding: 0;
+    margin-top: 3.25em; }
+    /* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    nav[role="navigation"] ul.nav li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      white-space: nowrap;
+      display: inline;
+      float: left;
+      padding-left: 1em;
+      padding-right: 1em; }
+      /* line 48, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+      nav[role="navigation"] ul.nav li:first-child, nav[role="navigation"] ul.nav li.first {
+        padding-left: 0; }
+      /* line 49, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+      nav[role="navigation"] ul.nav li:last-child {
+        padding-right: 0; }
+      /* line 50, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+      nav[role="navigation"] ul.nav li.last {
+        padding-right: 0; }
+    @media screen and (max-width: 875px) {
+      /* line 45, ../sass/_modules.scss */
+      nav[role="navigation"] ul.nav {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        *zoom: 1;
+        margin-top: 3.25em; }
+        /* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+        nav[role="navigation"] ul.nav li {
+          list-style-image: none;
+          list-style-type: none;
+          margin-left: 0;
+          white-space: nowrap;
+          display: inline;
+          float: left;
+          padding-left: 0.5em;
+          padding-right: 0.5em; }
+          /* line 48, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+          nav[role="navigation"] ul.nav li:first-child, nav[role="navigation"] ul.nav li.first {
+            padding-left: 0; }
+          /* line 49, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+          nav[role="navigation"] ul.nav li:last-child {
+            padding-right: 0; }
+          /* line 50, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+          nav[role="navigation"] ul.nav li.last {
+            padding-right: 0; } }
+    /* line 56, ../sass/_modules.scss */
+    nav[role="navigation"] ul.nav li {
+      -webkit-transition: all, ease, 0.3s;
+      -moz-transition: all, ease, 0.3s;
+      -o-transition: all, ease, 0.3s;
+      transition: all, ease, 0.3s; }
+      /* line 59, ../sass/_modules.scss */
+      nav[role="navigation"] ul.nav li a {
+        -webkit-transition: all, ease, 0.2s;
+        -moz-transition: all, ease, 0.2s;
+        -o-transition: all, ease, 0.2s;
+        transition: all, ease, 0.2s;
+        color: white;
+        font-size: 1.3em;
+        font-weight: 300;
+        text-decoration: none;
+        border-bottom: solid 1px rgba(255, 255, 255, 0); }
+        /* line 66, ../sass/_modules.scss */
+        nav[role="navigation"] ul.nav li a:hover {
+          border-bottom: solid 1px white; }
+      /* line 70, ../sass/_modules.scss */
+      nav[role="navigation"] ul.nav li a.current {
+        color: #ec5f34; }
+        /* line 72, ../sass/_modules.scss */
+        nav[role="navigation"] ul.nav li a.current:hover {
+          border-bottom: solid 1px #ec5f34; }
 
-/* line 84, ../sass/_modules.scss */
-#mp-headline {
-  overflow: hidden;
-  *zoom: 1;
-  -webkit-transition: all, ease, 0.5s;
-  -moz-transition: all, ease, 0.5s;
-  -o-transition: all, ease, 0.5s;
-  transition: all, ease, 0.5s;
-  font-size: 6em;
-  font-weight: 700;
-  margin-top: 10%;
-  text-align: left; }
-  @media screen and (max-height: 550px) {
-    /* line 84, ../sass/_modules.scss */
-    #mp-headline {
-      line-height: 1.2;
-      font-size: 5em; } }
-  @media screen and (max-height: 350px) {
-    /* line 84, ../sass/_modules.scss */
-    #mp-headline {
-      font-size: 3em; } }
-  /* line 100, ../sass/_modules.scss */
-  #mp-headline span {
-    color: #d94214; }
-
-/* line 105, ../sass/_modules.scss */
-.mp-line1 {
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all, ease, 0.5s;
-  -moz-transition: all, ease, 0.5s;
-  -o-transition: all, ease, 0.5s;
-  transition: all, ease, 0.5s;
-  margin-top: 2.5em;
-  font-family: ff-tisa-web-pro, serif;
-  font-weight: 400;
-  color: white;
-  font-size: 3em;
-  text-align: center; }
-
-/* line 116, ../sass/_modules.scss */
-.mp-line2 {
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all, ease, 0.5s;
-  -moz-transition: all, ease, 0.5s;
-  -o-transition: all, ease, 0.5s;
-  transition: all, ease, 0.5s;
-  font-weight: 300;
-  color: #15829e;
-  font-size: 4.5em;
-  line-height: 1.2;
-  text-align: center; }
-
-/* line 126, ../sass/_modules.scss */
-a#mp-scroll-button {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5em;
-  border: solid 2px white;
-  padding: 0.5em 1em 0.4em 1em;
-  -webkit-border-radius: 5px 5px;
-  -moz-border-radius: 5px / 5px;
-  border-radius: 5px / 5px;
-  -webkit-transition: all, ease, 0.2s;
-  -moz-transition: all, ease, 0.2s;
-  -o-transition: all, ease, 0.2s;
-  transition: all, ease, 0.2s; }
-  /* line 135, ../sass/_modules.scss */
-  a#mp-scroll-button i {
-    margin-left: 0.33em; }
-  /* line 139, ../sass/_modules.scss */
-  a#mp-scroll-button:hover {
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
-    -moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); }
+/* line 85, ../sass/_modules.scss */
+section[role="main"] {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 5%; }
+  @media screen and (max-width: 1150px) {
+    /* line 85, ../sass/_modules.scss */
+    section[role="main"] {
+      font-size: 0.85em; } }
+  @media screen and (max-width: 875px) {
+    /* line 85, ../sass/_modules.scss */
+    section[role="main"] {
+      font-size: 0.75em; } }
+  /* line 95, ../sass/_modules.scss */
+  section[role="main"] #mp-headline {
+    overflow: hidden;
+    *zoom: 1;
+    -webkit-transition: all, ease, 0.5s;
+    -moz-transition: all, ease, 0.5s;
+    -o-transition: all, ease, 0.5s;
+    transition: all, ease, 0.5s;
+    font-size: 5em;
+    font-weight: 700;
+    text-align: left; }
+    @media screen and (max-width: 300px) {
+      /* line 95, ../sass/_modules.scss */
+      section[role="main"] #mp-headline {
+        font-size: 2em;
+        text-align: center; }
+        /* line 105, ../sass/_modules.scss */
+        section[role="main"] #mp-headline span {
+          display: block; } }
+    /* line 110, ../sass/_modules.scss */
+    section[role="main"] #mp-headline span {
+      color: #d94214; }
+  /* line 115, ../sass/_modules.scss */
+  section[role="main"] .mp-line1 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all, ease, 0.5s;
+    -moz-transition: all, ease, 0.5s;
+    -o-transition: all, ease, 0.5s;
+    transition: all, ease, 0.5s;
+    margin-top: 2em;
+    font-family: ff-tisa-web-pro, serif;
+    font-weight: 400;
+    color: white;
+    font-size: 3em;
+    text-align: center; }
+  /* line 126, ../sass/_modules.scss */
+  section[role="main"] .mp-line2 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all, ease, 0.5s;
+    -moz-transition: all, ease, 0.5s;
+    -o-transition: all, ease, 0.5s;
+    transition: all, ease, 0.5s;
+    font-weight: 300;
+    color: #15829e;
+    font-size: 4.5em;
+    line-height: 1.2;
+    text-align: center; }
+  /* line 136, ../sass/_modules.scss */
+  section[role="main"] a#mp-scroll-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: solid 2px white;
+    padding: 0.5em 1em 0.4em 1em;
+    -webkit-border-radius: 5px 5px;
+    -moz-border-radius: 5px / 5px;
+    border-radius: 5px / 5px;
+    -webkit-transition: all, ease, 0.2s;
+    -moz-transition: all, ease, 0.2s;
+    -o-transition: all, ease, 0.2s;
+    transition: all, ease, 0.2s; }
+    /* line 145, ../sass/_modules.scss */
+    section[role="main"] a#mp-scroll-button i {
+      margin-left: 0.33em; }
+    /* line 149, ../sass/_modules.scss */
+    section[role="main"] a#mp-scroll-button:hover {
+      text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+      -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+      -moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); }
 
 @media all and (max-width: 27em) {
   /* line 11, ../sass/_states.scss */

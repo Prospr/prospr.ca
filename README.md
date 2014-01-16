@@ -1,31 +1,46 @@
-# The Statarkers Theme
+# Prospr
+## Grow Your Website.
 
-Born from the idea of a blank canvas for starting your Statamic sites this theme is loosely based on the popular [Starkers](http://viewportindustries.com/products/starkers/) theme for Wordpress. The idea being that you can load the theme into your Statamic themes folder, add the dummy content and fields to your Statamic install and get designing and building your Statamic sites in even less time than you were already.
+This is our site! We're glad you're peeking. Hopefully, you like what you see.
+Founded in 2013, Prospr helps small businesses in Toronto grow their online presence.
+A lot of web design firms cut corners and costs to get you a boilerplate website up and running quickly.
+At Prospr, we know that your site is the face of your business. We take the time and have the expertise necessary to build you a strong and future-ready site
+that not only looks good, but performs well too - for years to come.
 
-Normalize is used to reset browser defaults and SASS is used to make your CSS life easy. Each template is marked up with some helpful user notes. A development version of modernizr is included but we recommend that you tailor this to your site's requirements. To help with older browser support [DOMAssistant](http://www.domassistant.com/) and [Selectivir](http://selectivizr.com/) are also conditionally loaded for IE8. To finish off there are plenty of html5 boilerplate best practices in the document head and jQuery is included as standard.
+There's no hoodoo magic here, we want to make sure our clients always know what we're doing and why. Always ask us questions, we'll be happy to answer.
 
-Out of the box Statarkers supports IE8 and all modern browsers. To provide a basic layout for older browsers (IE7 & below) we use Andy Clarke's [universal stylesheet](http://stuffandnonsense.co.uk/blog/about/universal_internet_explorer_6_css). The scripts in the default layout template use conditional comments to stop them loading below IE8. If you would like to support IE7 & below you can remove these elements. 
+Over the course of a project, you'll have lots of involvement with the process. Access to our Dropbox, another GitHub repository similar to this one (but private), 
+and our Google Drive. Everything we do, you see. You hear that? It's the sound of a beautiful friendship based on trust being born.
 
-You can use Statarkers in any way you wish, please feel free to fork it on github. As the theme is offered for free, it’s also offered with limited support. If you find a bug, please let me know and I’ll fix it as soon as possible. Any improvements and feature requests can be asked through github.
+Feel free to poke around this repository. We've got nothing to hide. Except those hashed passwords in the user files.
 
-Happy Statamic Themeing!
+Thanks for reading. Live Long & Prospr.
 
-##Installing
+##Cloning, Branching & Playing Around
 
-To install the theme follow the instructions below.
+Prospr.ca uses Grunt to automate those boring tasks you hate. We also use Sass, Compass, and Susy to make our CSS awesome.
 
-1. [Install Statamic:](http://statamic.com/learn/digging-in/installing) **Don't forget to set up your .htaccess file**.
-2. Copy the statarkers theme folder to your _themes folder. Please note if you have downloaded the statarkers-theme-master folder **the statarkers theme is located inside the _themes folder**.
-3. Rename the Statarkers theme folder to the name of your theme. From now on we will still refer to the Statarkers theme folder but this will now be whatever you rename it to.
-4. Change the name of the statarkers.js file (located in the js folder) to the name of your theme.
-5. In the Statarkers theme folder go to the css folder. Rename the statarkers.css file to the name of your theme then find the sass folder and rename the statarkers.scss file to the name of your theme.
-6. In the Statarkers theme folder open the config.rb file and change the http path to /themes/yourThemeName instead of /themes/statarkers.
-7. Delete the contents of your Statamic install fieldsets folder then copy the new fieldsets from the Statarkers folder (located in _config/fieldsets).
-8. If you would like to use the dummy content provided with the Statarkers theme (recommended) then delete the contents of your existing _content folder and copy the files and folders from the Statarkers _content folder.
-9. In your Statamic install go to `_config` settings YAML file and change the `_theme` name from denali to the name you have given to your theme. If this is a clean install you should also change the site name and url to whatever you are using. We suggest also changing the `_taxonomy_slugify` to true as this gives you cleaner url's.
-10. Add the gitignore file to the root of your project/site (remove sample from the front of the file name), in here there are some handy ignores for Statamic.
-11. Run a compass watch on the statarkers theme folder using the terminal, alternatively you can use something like [Codekit](http://incident57.com/codekit/) to preprocess the SASS files.
+Grunt works on Node.js - Get the installer [here](http://nodejs.org/)
+
+Sass works on Ruby - Get the installer [here](http://rubyinstaller.org/)
+
+Once you've got Ruby & Node.js installed, do the following:
+
+'gem install sass'
+
+'gem install compass'
+
+'gem install susy'
+
+Then, navigate the the _themes/prospr/ directory and enter:
+
+'npm install'
+
+Finally, run the 'grunt' command. This will watch for changes in the files and activate the appropriate stuff.
+It'll even refresh the browser window if you're running on a local server. Cool.
+
+Happy fiddling!
 
 ##More Information
 
-You can visit [Statamic Themes](http://www.statamicthemes.com/themes) for more theme information and a demo is also availble [here](http://statarkers.statamicthemes.com). There is also a video which takes you through how to install the theme [here](http://www.statamicthemes.com/articles/part-1-installing-the-statarkers-statamic-theme).
+You can contact kenzie@prospr.ca if you've got any other questions about the project.

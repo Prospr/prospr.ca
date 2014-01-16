@@ -1,11 +1,11 @@
-<section role="main">
+<div class="container {{ if current_url == "" }}main-content text-center{{ endif }}">
   {{ if alt_title }}
   <h2>{{ alt_title }}</h2>
   {{ else }}
   <h2>{{ title }}</h2>
   {{ endif }}
   {{ content }}
-</section><!-- END role="main" -->
+</div><!-- END role="main" -->
 
 {{ if segment_1 == "" }}
 <section class="articles">

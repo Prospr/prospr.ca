@@ -3,9 +3,9 @@
   
   {{ theme:partial src="_header" }}
 
-  <div class="container {{ if current_url == "" }}main-content{{ endif }}">
+  <section role="main">
     {{ layout_content }}
-  </div><!-- END .container -->
+  </section><!-- END role="main" -->
 
   {{ theme:partial src="_footer" }}
 

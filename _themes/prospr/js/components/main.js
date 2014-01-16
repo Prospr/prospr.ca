@@ -1,8 +1,9 @@
 $(function() {
-    var BV = new $.BigVideo();
-    BV.init();
-    BV.show('/assets/vid/toronto.mp4',{ambient:true});
-
+    if ($('body').hasClass('home')){
+      var BV = new $.BigVideo();
+      BV.init();
+      BV.show('/assets/vid/toronto.mp4',{ambient:true});
+    }
     var workType = ['Design', 'Develop', 'Consult'];
     var services = ['Small\xA0Business', 'Search\xA0Optimization', 'User\xA0Experience', 'Brand\xA0Message', 'Content\xA0Strategy'];
 
@@ -11,8 +12,6 @@ $(function() {
       while (index == array.indexOf(element.text())){
         index = Math.floor(Math.random() * array.length);
       }
-      console.log ('Random Number: ', index);
-      console.log (element);
       $(element).fadeOut(500, function(){element.text(array[index])});
       $(element).fadeIn();
     }
