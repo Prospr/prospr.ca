@@ -29,10 +29,16 @@ $active: $lightblue;
 $visited: $darkblue;
 $focus: $lightblue;
 
-
 //fonts
 $proxima: proxima-nova, sans-serif;
 $tisa: ff-tisa-web-pro, serif;
+
+// z-indexes
+$negative: -1;
+$zero: 0;
+$devilish: 666;
+$leet: 1337;
+$over9000: 9001;
 
 // susy
 $total-columns  : 12;             // a 12-column grid

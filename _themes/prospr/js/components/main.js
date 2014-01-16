@@ -21,4 +21,12 @@ $(function() {
         serviceRotateInterval = setInterval(function(){rotateText(services, $('.rotate-service'));}, (Math.random() * 5000) + 3000);
     };
     initTextRotate();
+
+     // Init Skrollr
+    var s = skrollr.init({
+        render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
 });

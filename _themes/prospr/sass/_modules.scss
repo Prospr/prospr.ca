@@ -13,10 +13,7 @@
 .text-center { text-align: center; }
 
 header[role="banner"]{
-	background-color: rgba($black, 0.4);
-
 	#brand {
-		@include span-columns(5, 12);
 
 		h1 {
 			float: left;
@@ -40,7 +37,6 @@ header[role="banner"]{
 } //header[role="banner"]
 
 nav[role="navigation"]{
-	@include span-columns(7 omega, 12);
 	
 	ul.nav {
 		@include clearfix;
@@ -82,14 +78,32 @@ nav[role="navigation"]{
 // FRONTPAGE
 // =====================================
 
+.slide {
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
 section[role="main"]{
-	background-color: rgba($black, 0.4);
-	padding-top: 5%;
 	@media screen and (max-width: 1150px){
 		font-size: 0.85em;
 	}
 	@media screen and (max-width: 875px){
 		font-size: 0.75em;
+	}
+	background-color: rgba($black, 0.4);
+}
+
+#mp-splash {
+	width:100%;
+	height:100%;
+	text-align: center;
+
+	.wrapper {
+		position: fixed;
+		width: 100%;
+		height: 100%;
 	}
 
 	#mp-headline {
@@ -98,6 +112,7 @@ section[role="main"]{
 		font-size: 5em;
 		font-weight: 700;
 		text-align: left;
+		padding-top: 2em;
 
 		@media screen and (max-width: 300px){
 			font-size: 2em;
@@ -120,7 +135,6 @@ section[role="main"]{
 		font-weight: 400;
 		color: $white;
 		font-size: 3em;
-		text-align: center;
 	}
 
 	.mp-line2 {
@@ -128,9 +142,8 @@ section[role="main"]{
 		@include transition(all, ease, 0.5s);
 		font-weight: 300;
 		color: lighten($darkblue, 20%);
-		font-size: 4.5em;
+		font-size: 4em;
 		line-height: 1.2;
-		text-align: center;
 	}
 
 	a#mp-scroll-button {
@@ -139,6 +152,10 @@ section[role="main"]{
 		font-size: 1.5em;
 		border: solid 2px $white;
 		padding: 0.5em 1em 0.4em 1em;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 3em;
+		max-width: 11em;
 		@include border-radius (5px, 5px);
 		@include transition(all, ease, 0.2s);
 
@@ -150,5 +167,15 @@ section[role="main"]{
 			@include single-text-shadow (rgba($white, 0.5), 0px, 0px, 5px);
 			@include single-box-shadow (rgba($white, 0.5), 0px, 0px, 5px);
 		}
+	}
+}
+
+#mp-intro {
+	background: $white;
+	text-align: center;
+	position: relative;
+
+	h2 {
+		color: $darkblue;
 	}
 }

@@ -1,3 +1,12 @@
+// =====================================
+// SHAME RULES
+// =====================================
+
+// This should be empty.
+// If you urgently need a fix, put it here.
+// Then put it where it belongs later!
+// SHAAAAAME! SHAAAAAME!
+
 /*  BigVideo Styles 
   You may need to adjust these styles to get this working right in your design. 
 */
@@ -20,3 +29,12 @@
 #big-video-control .ui-slider-handle{border-left:solid 1px #fff; width:16px;height:16px;position:absolute;top:-8px;}
 .transparent{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}
 .vjs-big-play-button{display:none !important;}
+
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}

@@ -3,9 +3,7 @@
   
   {{ theme:partial src="_header" }}
 
-  <section role="main">
-    {{ layout_content }}
-  </section><!-- END role="main" -->
+  {{ layout_content }}
 
   {{ theme:partial src="_footer" }}
 
@@ -18,8 +16,8 @@
 <script src="{{ theme:js src='/libs/imagesloaded.pkgd.min.js'}}"></script>
 {{# BigVideo.js import #}}
 <script src="{{ theme:js src='/libs/bigvideo.js'}}"></script>
-{{# stellar.js import #}}
-<script src="{{ theme:js src='/libs/jquery.stellar.js'}}"></script>
+{{# skrollr.js import #}}
+<script src="{{ theme:js src='/libs/skrollr.min.js'}}"></script>
 <!--<![endif]-->
 <!-- LiveReload for Development -->
 <script src="http://localhost:35729/livereload.js"></script>
