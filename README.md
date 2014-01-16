@@ -26,15 +26,15 @@ Sass works on Ruby - Get the installer [here](http://rubyinstaller.org/)
 
 Once you've got Ruby & Node.js installed, do the following:
 
-'gem install sass'
+'$ gem install sass'
 
-'gem install compass'
+'$ gem install compass'
 
-'gem install susy'
+'$ gem install susy'
 
 Then, navigate the the _themes/prospr/ directory and enter:
 
-'npm install'
+'$ npm install'
 
 Finally, run the 'grunt' command. This will watch for changes in the files and activate the appropriate stuff.
 It'll even refresh the browser window if you're running on a local server. Cool.
