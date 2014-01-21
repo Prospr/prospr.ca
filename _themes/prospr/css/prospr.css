@@ -646,17 +646,25 @@ footer[role="contentinfo"] {
 
 /* line 160, ../sass/_modules.scss */
 #mp-intro {
-  background: #fff9e5;
+  background: white;
   text-align: center;
   position: relative; }
   /* line 165, ../sass/_modules.scss */
   #mp-intro h2 {
+    width: 100%;
+    float: left;
+    margin-right: 1.40845%;
+    display: inline;
     color: #52736b;
     font-family: ff-tisa-web-pro, serif;
     padding-top: 0.4em;
     font-size: 2.5em; }
-  /* line 172, ../sass/_modules.scss */
+  /* line 173, ../sass/_modules.scss */
   #mp-intro h3 {
+    width: 100%;
+    float: left;
+    margin-right: 1.40845%;
+    display: inline;
     color: #80a894;
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
@@ -665,48 +673,51 @@ footer[role="contentinfo"] {
     padding-bottom: 0.4em;
     border-bottom: dashed 1px rgba(128, 168, 148, 0.5);
     margin-bottom: 1em; }
-  /* line 183, ../sass/_modules.scss */
+  /* line 185, ../sass/_modules.scss */
   #mp-intro h4 {
     color: #093844;
     font-family: ff-tisa-web-pro, serif;
     font-size: 1.5em; }
-  /* line 189, ../sass/_modules.scss */
+  /* line 191, ../sass/_modules.scss */
   #mp-intro h5 {
     color: #093844;
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
     font-size: 1.3em; }
-  /* line 196, ../sass/_modules.scss */
+  /* line 198, ../sass/_modules.scss */
+  #mp-intro p {
+    font-size: 1.1em; }
+  /* line 202, ../sass/_modules.scss */
   #mp-intro .intro-content div {
     padding: 0 2em;
     margin-bottom: 2em; }
-  /* line 201, ../sass/_modules.scss */
+  /* line 207, ../sass/_modules.scss */
   #mp-intro #growth {
     width: 49.29577%;
     float: left;
     margin-right: 1.40845%;
     display: inline;
     border-right: dashed 1px rgba(128, 168, 148, 0.5); }
-  /* line 206, ../sass/_modules.scss */
+  /* line 212, ../sass/_modules.scss */
   #mp-intro #promote {
     width: 49.29577%;
     float: right;
     margin-right: 0;
     *margin-left: -1em;
     display: inline; }
-  /* line 210, ../sass/_modules.scss */
+  /* line 216, ../sass/_modules.scss */
   #mp-intro #honesty {
     width: 32.39437%;
     float: left;
     margin-right: 1.40845%;
     display: inline; }
-  /* line 214, ../sass/_modules.scss */
+  /* line 220, ../sass/_modules.scss */
   #mp-intro #accountability {
     width: 32.39437%;
     float: left;
     margin-right: 1.40845%;
     display: inline; }
-  /* line 218, ../sass/_modules.scss */
+  /* line 224, ../sass/_modules.scss */
   #mp-intro #contracts {
     width: 32.39437%;
     float: right;
@@ -714,24 +725,24 @@ footer[role="contentinfo"] {
     *margin-left: -1em;
     display: inline; }
 
-/* line 223, ../sass/_modules.scss */
+/* line 229, ../sass/_modules.scss */
 #mp-testimonial {
   position: relative;
   background: rgba(9, 56, 68, 0.65); }
-  /* line 227, ../sass/_modules.scss */
+  /* line 233, ../sass/_modules.scss */
   #mp-testimonial div {
     text-align: center;
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
     color: white;
     padding: 3em 6em; }
-    /* line 234, ../sass/_modules.scss */
+    /* line 240, ../sass/_modules.scss */
     #mp-testimonial div p {
       overflow: hidden;
       *zoom: 1;
       margin: 0;
       font-size: 1.5em; }
-    /* line 240, ../sass/_modules.scss */
+    /* line 246, ../sass/_modules.scss */
     #mp-testimonial div b {
       display: block;
       float: right;
@@ -739,18 +750,18 @@ footer[role="contentinfo"] {
       margin-top: 0.5em;
       font-weight: 100; }
 
-/* line 250, ../sass/_modules.scss */
+/* line 256, ../sass/_modules.scss */
 #mp-contact {
   position: relative;
-  background: #fff9e5;
+  background: white;
   text-align: center; }
-  /* line 255, ../sass/_modules.scss */
+  /* line 261, ../sass/_modules.scss */
   #mp-contact h2 {
     color: #52736b;
     font-family: ff-tisa-web-pro, serif;
     padding-top: 0.4em;
     font-size: 2.5em; }
-  /* line 262, ../sass/_modules.scss */
+  /* line 268, ../sass/_modules.scss */
   #mp-contact h3 {
     color: #80a894;
     font-family: proxima-nova, sans-serif;
@@ -760,25 +771,25 @@ footer[role="contentinfo"] {
     padding-bottom: 0.4em;
     border-bottom: dashed 1px rgba(128, 168, 148, 0.5);
     margin-bottom: 1em; }
-  /* line 273, ../sass/_modules.scss */
+  /* line 279, ../sass/_modules.scss */
   #mp-contact h4 {
     color: #093844;
     font-family: ff-tisa-web-pro, serif;
     font-size: 2em; }
-  /* line 279, ../sass/_modules.scss */
+  /* line 285, ../sass/_modules.scss */
   #mp-contact a {
     text-decoration: none;
     color: #52736b;
     font-size: 2em;
     display: block;
     margin-bottom: 1em; }
-  /* line 287, ../sass/_modules.scss */
+  /* line 293, ../sass/_modules.scss */
   #mp-contact .call-us {
     width: 49.29577%;
     float: left;
     margin-right: 1.40845%;
     display: inline; }
-  /* line 291, ../sass/_modules.scss */
+  /* line 297, ../sass/_modules.scss */
   #mp-contact .email-us {
     width: 49.29577%;
     float: right;

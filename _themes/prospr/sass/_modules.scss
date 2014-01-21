@@ -158,11 +158,12 @@ footer[role="contentinfo"]{
 }
 
 #mp-intro {
-	background: lighten($cream, 7%);
+	background: $white;
 	text-align: center;
 	position: relative;
 
 	h2 {
+		@include span-columns (12,12);
 		color: $greygreen;
 		font-family: $tisa;
 		padding-top: 0.4em;
@@ -170,6 +171,7 @@ footer[role="contentinfo"]{
 	}
 
 	h3 {
+		@include span-columns (12,12);
 		color: $seagreen;
 		font-family: $proxima;
 		font-weight: 300;
@@ -191,6 +193,10 @@ footer[role="contentinfo"]{
 		font-family: $proxima;
 		font-weight: 300;
 		font-size: 1.3em;
+	}
+
+	p {
+		font-size: 1.1em;
 	}
 
 	.intro-content div {
@@ -249,7 +255,7 @@ footer[role="contentinfo"]{
 
 #mp-contact {
 	position: relative;
-	background: lighten($cream, 7%);
+	background: $white;
 	text-align: center;
 
 	h2 {
