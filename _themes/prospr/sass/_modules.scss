@@ -14,7 +14,6 @@
 
 header[role="banner"]{
 	#brand {
-
 		h1 {
 			float: left;
 			margin-top: 0.65em;
@@ -27,14 +26,20 @@ header[role="banner"]{
 				color: $white;
 			} //a
 		}//h1
-		object {
+		#prospr-logo {
 			float: left;
 			margin-left: 2em;
 			width: 6.25em; /* 100px/16px */
 			height: 4.6875em; /* 75px/16px */
+			background: url("/assets/img/negative-logo.svg");
+			background-size: 6.25em 4.6875em;
 		}
 	} 
 } //header[role="banner"]
+
+.no-svg #prospr-logo {
+	background-image: url("/assets/img/negative-logo.png");
+}
 
 nav[role="navigation"]{
 	

@@ -446,27 +446,33 @@ footer[role="contentinfo"] {
 .text-center {
   text-align: center; }
 
-/* line 18, ../sass/_modules.scss */
+/* line 17, ../sass/_modules.scss */
 header[role="banner"] #brand h1 {
   float: left;
   margin-top: 0.65em; }
-  /* line 22, ../sass/_modules.scss */
+  /* line 21, ../sass/_modules.scss */
   header[role="banner"] #brand h1 a {
     width: 100%;
     font-size: 1.75em;
     line-height: 1.3;
     text-decoration: none;
     color: white; }
-/* line 30, ../sass/_modules.scss */
-header[role="banner"] #brand object {
+/* line 29, ../sass/_modules.scss */
+header[role="banner"] #brand #prospr-logo {
   float: left;
   margin-left: 2em;
   width: 6.25em;
   /* 100px/16px */
   height: 4.6875em;
-  /* 75px/16px */ }
+  /* 75px/16px */
+  background: url("/assets/img/negative-logo.svg");
+  background-size: 6.25em 4.6875em; }
 
-/* line 41, ../sass/_modules.scss */
+/* line 40, ../sass/_modules.scss */
+.no-svg #prospr-logo {
+  background-image: url("/assets/img/negative-logo.png"); }
+
+/* line 46, ../sass/_modules.scss */
 nav[role="navigation"] ul.nav {
   overflow: hidden;
   *zoom: 1;
@@ -498,7 +504,7 @@ nav[role="navigation"] ul.nav {
     nav[role="navigation"] ul.nav li.last {
       padding-right: 0; }
   @media screen and (max-width: 875px) {
-    /* line 41, ../sass/_modules.scss */
+    /* line 46, ../sass/_modules.scss */
     nav[role="navigation"] ul.nav {
       margin: 0;
       padding: 0;
@@ -525,13 +531,13 @@ nav[role="navigation"] ul.nav {
         /* line 50, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
         nav[role="navigation"] ul.nav li.last {
           padding-right: 0; } }
-  /* line 52, ../sass/_modules.scss */
+  /* line 57, ../sass/_modules.scss */
   nav[role="navigation"] ul.nav li {
     -webkit-transition: all, ease, 0.3s;
     -moz-transition: all, ease, 0.3s;
     -o-transition: all, ease, 0.3s;
     transition: all, ease, 0.3s; }
-    /* line 55, ../sass/_modules.scss */
+    /* line 60, ../sass/_modules.scss */
     nav[role="navigation"] ul.nav li a {
       -webkit-transition: all, ease, 0.2s;
       -moz-transition: all, ease, 0.2s;
@@ -542,34 +548,34 @@ nav[role="navigation"] ul.nav {
       font-weight: 300;
       text-decoration: none;
       border-bottom: solid 1px rgba(255, 255, 255, 0); }
-      /* line 62, ../sass/_modules.scss */
+      /* line 67, ../sass/_modules.scss */
       nav[role="navigation"] ul.nav li a:hover {
         color: #ec5f34 !important;
         /* Important flag to prevent skrollr from changing it back to white */ }
-    /* line 66, ../sass/_modules.scss */
+    /* line 71, ../sass/_modules.scss */
     nav[role="navigation"] ul.nav li a.current {
       color: #ec5f34 !important;
       /* Important flag to prevent skrollr from changing it back to white */ }
 
-/* line 73, ../sass/_modules.scss */
+/* line 78, ../sass/_modules.scss */
 footer[role="contentinfo"] {
   color: white; }
-  /* line 75, ../sass/_modules.scss */
+  /* line 80, ../sass/_modules.scss */
   footer[role="contentinfo"] a {
     color: white; }
 
-/* line 83, ../sass/_modules.scss */
+/* line 88, ../sass/_modules.scss */
 #mp-splash {
   width: 100%;
   height: 100%;
   text-align: center; }
-  /* line 88, ../sass/_modules.scss */
+  /* line 93, ../sass/_modules.scss */
   #mp-splash .wrapper {
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); }
-  /* line 95, ../sass/_modules.scss */
+  /* line 100, ../sass/_modules.scss */
   #mp-splash #mp-headline {
     overflow: hidden;
     *zoom: 1;
@@ -583,17 +589,17 @@ footer[role="contentinfo"] {
     padding-top: 2.75em;
     color: white; }
     @media screen and (max-width: 300px) {
-      /* line 95, ../sass/_modules.scss */
+      /* line 100, ../sass/_modules.scss */
       #mp-splash #mp-headline {
         font-size: 2em;
         text-align: center; }
-        /* line 107, ../sass/_modules.scss */
+        /* line 112, ../sass/_modules.scss */
         #mp-splash #mp-headline span {
           display: block; } }
-    /* line 112, ../sass/_modules.scss */
+    /* line 117, ../sass/_modules.scss */
     #mp-splash #mp-headline span {
       color: #d94214; }
-  /* line 117, ../sass/_modules.scss */
+  /* line 122, ../sass/_modules.scss */
   #mp-splash .mp-line1 {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     -webkit-transition: all, ease, 0.5s;
@@ -605,7 +611,7 @@ footer[role="contentinfo"] {
     font-weight: 400;
     color: white;
     font-size: 3em; }
-  /* line 127, ../sass/_modules.scss */
+  /* line 132, ../sass/_modules.scss */
   #mp-splash .mp-line2 {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     -webkit-transition: all, ease, 0.5s;
@@ -616,7 +622,7 @@ footer[role="contentinfo"] {
     color: white;
     font-size: 4em;
     line-height: 1.2; }
-  /* line 136, ../sass/_modules.scss */
+  /* line 141, ../sass/_modules.scss */
   #mp-splash a#mp-scroll-button {
     color: white;
     text-decoration: none;
@@ -634,22 +640,22 @@ footer[role="contentinfo"] {
     -moz-transition: all, ease, 0.2s;
     -o-transition: all, ease, 0.2s;
     transition: all, ease, 0.2s; }
-    /* line 149, ../sass/_modules.scss */
+    /* line 154, ../sass/_modules.scss */
     #mp-splash a#mp-scroll-button i {
       margin-left: 0.33em; }
-    /* line 153, ../sass/_modules.scss */
+    /* line 158, ../sass/_modules.scss */
     #mp-splash a#mp-scroll-button:hover {
       text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
       -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
       -moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
       box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); }
 
-/* line 160, ../sass/_modules.scss */
+/* line 165, ../sass/_modules.scss */
 #mp-intro {
   background: white;
   text-align: center;
   position: relative; }
-  /* line 165, ../sass/_modules.scss */
+  /* line 170, ../sass/_modules.scss */
   #mp-intro h2 {
     width: 100%;
     float: left;
@@ -659,7 +665,7 @@ footer[role="contentinfo"] {
     font-family: ff-tisa-web-pro, serif;
     padding-top: 0.4em;
     font-size: 2.5em; }
-  /* line 173, ../sass/_modules.scss */
+  /* line 178, ../sass/_modules.scss */
   #mp-intro h3 {
     width: 100%;
     float: left;
@@ -673,51 +679,51 @@ footer[role="contentinfo"] {
     padding-bottom: 0.4em;
     border-bottom: dashed 1px rgba(128, 168, 148, 0.5);
     margin-bottom: 1em; }
-  /* line 185, ../sass/_modules.scss */
+  /* line 190, ../sass/_modules.scss */
   #mp-intro h4 {
     color: #093844;
     font-family: ff-tisa-web-pro, serif;
     font-size: 1.5em; }
-  /* line 191, ../sass/_modules.scss */
+  /* line 196, ../sass/_modules.scss */
   #mp-intro h5 {
     color: #093844;
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
     font-size: 1.3em; }
-  /* line 198, ../sass/_modules.scss */
+  /* line 203, ../sass/_modules.scss */
   #mp-intro p {
     font-size: 1.1em; }
-  /* line 202, ../sass/_modules.scss */
+  /* line 207, ../sass/_modules.scss */
   #mp-intro .intro-content div {
     padding: 0 2em;
     margin-bottom: 2em; }
-  /* line 207, ../sass/_modules.scss */
+  /* line 212, ../sass/_modules.scss */
   #mp-intro #growth {
     width: 49.29577%;
     float: left;
     margin-right: 1.40845%;
     display: inline;
     border-right: dashed 1px rgba(128, 168, 148, 0.5); }
-  /* line 212, ../sass/_modules.scss */
+  /* line 217, ../sass/_modules.scss */
   #mp-intro #promote {
     width: 49.29577%;
     float: right;
     margin-right: 0;
     *margin-left: -1em;
     display: inline; }
-  /* line 216, ../sass/_modules.scss */
+  /* line 221, ../sass/_modules.scss */
   #mp-intro #honesty {
     width: 32.39437%;
     float: left;
     margin-right: 1.40845%;
     display: inline; }
-  /* line 220, ../sass/_modules.scss */
+  /* line 225, ../sass/_modules.scss */
   #mp-intro #accountability {
     width: 32.39437%;
     float: left;
     margin-right: 1.40845%;
     display: inline; }
-  /* line 224, ../sass/_modules.scss */
+  /* line 229, ../sass/_modules.scss */
   #mp-intro #contracts {
     width: 32.39437%;
     float: right;
@@ -725,24 +731,24 @@ footer[role="contentinfo"] {
     *margin-left: -1em;
     display: inline; }
 
-/* line 229, ../sass/_modules.scss */
+/* line 234, ../sass/_modules.scss */
 #mp-testimonial {
   position: relative;
   background: rgba(9, 56, 68, 0.65); }
-  /* line 233, ../sass/_modules.scss */
+  /* line 238, ../sass/_modules.scss */
   #mp-testimonial div {
     text-align: center;
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
     color: white;
     padding: 3em 6em; }
-    /* line 240, ../sass/_modules.scss */
+    /* line 245, ../sass/_modules.scss */
     #mp-testimonial div p {
       overflow: hidden;
       *zoom: 1;
       margin: 0;
       font-size: 1.5em; }
-    /* line 246, ../sass/_modules.scss */
+    /* line 251, ../sass/_modules.scss */
     #mp-testimonial div b {
       display: block;
       float: right;
@@ -750,18 +756,18 @@ footer[role="contentinfo"] {
       margin-top: 0.5em;
       font-weight: 100; }
 
-/* line 256, ../sass/_modules.scss */
+/* line 261, ../sass/_modules.scss */
 #mp-contact {
   position: relative;
   background: white;
   text-align: center; }
-  /* line 261, ../sass/_modules.scss */
+  /* line 266, ../sass/_modules.scss */
   #mp-contact h2 {
     color: #52736b;
     font-family: ff-tisa-web-pro, serif;
     padding-top: 0.4em;
     font-size: 2.5em; }
-  /* line 268, ../sass/_modules.scss */
+  /* line 273, ../sass/_modules.scss */
   #mp-contact h3 {
     color: #80a894;
     font-family: proxima-nova, sans-serif;
@@ -771,25 +777,25 @@ footer[role="contentinfo"] {
     padding-bottom: 0.4em;
     border-bottom: dashed 1px rgba(128, 168, 148, 0.5);
     margin-bottom: 1em; }
-  /* line 279, ../sass/_modules.scss */
+  /* line 284, ../sass/_modules.scss */
   #mp-contact h4 {
     color: #093844;
     font-family: ff-tisa-web-pro, serif;
     font-size: 2em; }
-  /* line 285, ../sass/_modules.scss */
+  /* line 290, ../sass/_modules.scss */
   #mp-contact a {
     text-decoration: none;
     color: #52736b;
     font-size: 2em;
     display: block;
     margin-bottom: 1em; }
-  /* line 293, ../sass/_modules.scss */
+  /* line 298, ../sass/_modules.scss */
   #mp-contact .call-us {
     width: 49.29577%;
     float: left;
     margin-right: 1.40845%;
     display: inline; }
-  /* line 297, ../sass/_modules.scss */
+  /* line 302, ../sass/_modules.scss */
   #mp-contact .email-us {
     width: 49.29577%;
     float: right;
@@ -801,6 +807,10 @@ footer[role="contentinfo"] {
   /* line 11, ../sass/_states.scss */
   body {
     font-size: 0.875em; } }
+/* line 16, ../sass/_states.scss */
+.no-svg #prospr-logo {
+  background-image: url("/assets/img/negative-logo.png"); }
+
 /*  BigVideo Styles 
   You may need to adjust these styles to get this working right in your design. 
 */
