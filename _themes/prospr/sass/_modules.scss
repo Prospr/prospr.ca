@@ -37,10 +37,6 @@ header[role="banner"]{
 	} 
 } //header[role="banner"]
 
-.no-svg #prospr-logo {
-	background-image: url("/assets/img/negative-logo.png");
-}
-
 nav[role="navigation"]{
 	
 	ul.nav {
@@ -96,71 +92,60 @@ footer[role="contentinfo"]{
 		height: 100%;
 		background-color: rgba($black, 0.4);
 	}
+}
+
+.splash-content {
+	height: 100%;
+
+	div {
+		position: absolute;
+		top: 20%;
+	}
 
 	#mp-headline {
-		@include clearfix;
-		@include transition(all, ease, 0.5s);
-		font-size: 5em;
-		font-weight: 700;
-		text-align: left;
-		padding-top: 2.75em;
-		color: $white;
+			@include clearfix;
+			@include transition(all, ease, 0.5s);
+			font-size: 5em;
+			font-weight: 700;
+			text-align: left;
+			color: $white;
 
-		@media screen and (max-width: 300px){
-			font-size: 2em;
-			text-align: center;
+			@media screen and (max-width: 300px){
+				font-size: 2em;
+				text-align: center;
+				span {
+					display: block;
+				}
+			}
+
 			span {
-				display: block;
+				color: $ochre;
 			}
 		}
 
-		span {
-			color: $ochre;
-		}
-	}
-
-	.mp-line1 {
-		@include single-text-shadow(rgba($black, 0.5), 1px, 1px, 5px);
-		@include transition(all, ease, 0.5s);
-		margin-top: 2em;
-		font-family: $tisa;
-		font-weight: 400;
-		color: $white;
-		font-size: 3em;
-	}
-
-	.mp-line2 {
-		@include single-text-shadow(rgba($black, 0.5), 1px, 1px, 5px);
-		@include transition(all, ease, 0.5s);
-		font-weight: 300;
-		color: $white;
-		font-size: 4em;
-		line-height: 1.2;
-	}
-
-	a#mp-scroll-button {
-		color: $white;
-		text-decoration: none;
-		font-size: 1.5em;
-		border: solid 2px $white;
-		padding: 0.5em 1em 0.4em 1em;
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 3em;
-		max-width: 11em;
-		@include border-radius (5px, 5px);
-		@include transition(all, ease, 0.2s);
-
-		i {
-			margin-left: 0.33em;
+		.mp-byline {
+			@include single-text-shadow(rgba($black, 0.5), 1px, 1px, 5px);
+			@include transition(all, ease, 0.5s);
+			margin-top: 2em;
+			font-family: $tisa;
+			font-weight: 400;
+			color: $white;
+			font-size: 3em;
 		}
 
-		&:hover {
-			@include single-text-shadow (rgba($white, 0.5), 0px, 0px, 5px);
-			@include single-box-shadow (rgba($white, 0.5), 0px, 0px, 5px);
+		#mp-scrolldown {
+			color: $white;
+			font-size: 1.5em;
+			font-weight: 300;
+			display: block;
+			margin: 5em auto;
+			margin-bottom: 0;
+
+			i {
+				margin-left: 0.33em;
+			}
 		}
 	}
-}
 
 #mp-intro {
 	background: $white;
@@ -301,5 +286,115 @@ footer[role="contentinfo"]{
 
 	.email-us {
 		@include span-columns(6 omega, 12);
+	}
+}
+
+/****************************
+* About Us
+****************************/
+
+.splash {
+	width:100%;
+	height:66%;
+	text-align: center;
+
+	.wrapper {
+		position: fixed;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($black, 0.5);
+
+		h1 {
+			font-size: 4em;
+			font-weight: 700;
+			text-align: left;
+			color: $white;
+			margin-top: 1em;
+		}
+		h1:first-child {
+			margin-top: 2.25em;
+		}
+	}
+}
+
+
+.bgimg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -10;
+}
+
+#au-bg {
+	background: url("/assets/img/about-us-bg.jpg");
+	background-size: cover;
+}
+
+#pc-bg {
+	background: url("/assets/img/pricing-bg.jpg");
+	background-size: cover;
+}
+
+#oa-bg {
+	background: url("/assets/img/our-approach-bg.jpg");
+	background-size: cover;
+}
+
+.team-members {
+	width: 100%;
+	background: #fff;
+	
+	div {
+		padding: 2em 0;
+
+		img {
+			@include span-columns(4, 12);
+			@include border-radius(100%);
+		}
+		h2 {
+			@include span-columns(7.75 omega,12);
+			font-size: 3em;
+			margin: 0;
+			line-height: 1;
+		}
+		h3 {
+			@include span-columns(7.75 omega,12);
+			font-size: 2em;
+			font-family: $tisa;
+			color: $greygreen;
+		}
+		blockquote {
+			@include span-columns(7.75 omega,12);
+			font-size: 2em;
+			font-weight: 300;
+			color: $seagreen;
+			display: block;
+			margin: 1em 0;
+		}
+		p {
+			@include span-columns(7.75 omega, 12);
+			margin: 0;
+			font-size: 1.2em;
+		}
+	}
+
+	div:nth-child(even) {
+		text-align: right;
+		img {
+			@include span-columns(4 omega, 12);
+		}
+		h2 {
+			@include span-columns(7.75,12);
+		}
+		h3 {
+			@include span-columns(7.75,12);
+		}
+		blockquote {
+			@include span-columns(7.75,12);
+		}
+		p {
+			@include span-columns(7.75, 12);
+		}
 	}
 }
