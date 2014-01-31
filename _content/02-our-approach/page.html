@@ -10,6 +10,125 @@ _template: blankpage
 <div class="bgimg" id="oa-bg"></div>
 <div class="splash">
   <div class="wrapper">
-    
+    <div class="splash-content container" data-0="opacity: 1;" data-50p="opacity: 0;">
+      <h1>With a great website comes great responsibility.</h1>
+      <h1>Let's break down our process to get you there.</h1>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="our-approach">
+  <div class="container">
+    <div>
+      <h2>What do you actually do?</h2>
+      <h3>Here's what.</h3>
+      <div class="service">
+        <i class="fa fa-pencil"></i>
+        <h4>Design</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, sunt quam autem eaque deleniti dignissimos laboriosam iure labore voluptatem culpa corrupti perspiciatis corporis fuga iste quaerat recusandae voluptatum ullam quisquam.</p>
+      </div>
+      <div class="service">
+        <i class="fa fa-code"></i>
+        <h4>Development</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, sunt quam autem eaque deleniti dignissimos laboriosam iure labore voluptatem culpa corrupti perspiciatis corporis fuga iste quaerat recusandae voluptatum ullam quisquam.</p>
+      </div>
+      <div class="service">
+        <i class="fa fa-search"></i>
+        <h4>Search Engine Optimization</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, sunt quam autem eaque deleniti dignissimos laboriosam iure labore voluptatem culpa corrupti perspiciatis corporis fuga iste quaerat recusandae voluptatum ullam quisquam.</p>
+      </div>
+    </div>
+    <div>
+      <h2>How long does this take? What happens when?</h2>
+      <h3>Below is a roadmap for a typical project.</h3>
+      <ul class="roadmap">
+        <div id="milestone-grid">
+          <div class="milestone1"><label>Milestone</label></div>
+          <div class="milestone2"><label>Milestone</label></div>
+          <div class="launch"><label>Launch</label></div>
+          <div class="future"><label>Future</label></div>
+        </div>
+        <li>
+          <div class="label"><i class="fa fa-comments"></i> Research</div>
+          <div class="chart">
+            <div class="research"></div>
+          </div>
+        </li>
+        <li>
+          <div class="label"><i class="fa fa-pencil"></i> Design</div>
+          <div class="chart">
+            <div class="design-spacer"></div>
+            <div class="design"></div>
+          </div>
+        </li>
+        <li>
+          <div class="label"><i class="fa fa-search"></i> SEO</div>
+          <div class="chart">
+            <div class="seo-spacer"></div>
+            <div class="seo"></div>
+          </div>
+        </li>
+        <li>
+          <div class="label"><i class="fa fa-code"></i> Development</div>
+          <div class="chart">
+            <div class="development-spacer"></div>
+            <div class="development"></div>
+          </div>
+        </li>
+        <li>
+          <div class="label"><i class="fa fa-cogs"></i> Maintenance</div>
+          <div class="chart">
+            <div class="maintenance-spacer"></div>
+            <div class="maintenance"></div>
+          </div>
+        </li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolorum, nam, laboriosam, non accusamus officia possimus reprehenderit officiis ullam ex obcaecati illo consectetur doloremque dicta repudiandae dolores aperiam rem minus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, provident, necessitatibus, suscipit aliquam possimus reprehenderit consequuntur beatae obcaecati sint dolore ipsam quas repudiandae placeat aperiam autem fuga consectetur dolores ad.</p>
+    </div>
+    <div>
+      <h2>Alright, how much does it cost?</h2>
+      <h3>It depends what you need, but we're always reasonable.</h3>
+      <div class="quote">
+        <h4>I want a fantastic new site!</h4>
+        <h5>Contact us for a free initial consultation!</h5>
+        {{ email_form subject="Contact Form" to="contact@prospr.ca" required="name" }}
+          {{ if error}}
+            <h1>Error</h1>
+            <ul>
+            {{ errors }}
+              <li>{{error}}</li>
+            {{ /errors }}
+            </ul>
+          {{ endif }}
+
+          {{ if success }}
+            <p>Your message has been sent!</p>
+          {{ else }}
+            <div>
+              <label for="name">Your Name:</label>
+              <input type="text" name="name" id="name" placeholder="First Last">
+            </div>
+            <div>
+              <label for="from">Email:</label>
+              <input type="email" name="from" id="from" placeholder="youremail@weloveprospr.com">
+            </div>
+            <div>
+              <label for="phone">Phone:</label>
+              <input type="tel" name="phone" id="phone" placeholder="(###) ###-####">
+            </div>
+            <div>
+              <label for="desc">Let us know about your business:</label>
+              <textarea type="text" name="desc" id="desc" placeholder="Hello Prospr, I need a new site!"></textarea>
+            </div>
+            <div><input type="submit"></div>
+          {{ endif }}
+        {{ /email_form }}
+      </div>
+      <div class="quote">
+        <h4>I've got a site, but I need effective SEO!</h4>
+        <a href="/pricing">Check out our monthly pricing.</a>
+        <a href="/free-quote">Or contact us for a free quote!</a>
+      </div>
+    </div>
   </div>
 </div>
