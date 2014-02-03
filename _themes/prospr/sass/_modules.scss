@@ -504,3 +504,79 @@ footer[role="contentinfo"]{
 	}
 }
 
+.pricing {
+	width: 100%;
+	background: $white;
+	text-align: center;
+
+	.price-tier {
+		@include span-columns(4,12);
+		float: left;
+		border: 1px solid $lighterGrey;
+		margin-top: 2em;
+		margin-bottom: 2em;
+
+		h3 {
+			border: none;
+			padding: 0;
+			margin: 0;
+			margin-top: 1em;
+			color: darken($seagreen, 10%);
+			font-size: 3em;
+
+			small {
+				display: inline;
+				font-size: 0.5em;
+			}
+		}
+
+		h4 {
+			text-transform: uppercase;
+			font-family: $proxima;
+		}
+
+		h5 {
+			text-transform: uppercase;
+			padding: 0.75em 0;
+			background: lighten($darkblue, 20%);
+			color: $white;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+				display: block;
+				font-size: 1.2em;
+				line-height: 2em;
+			}
+
+			li:nth-child(odd){
+				background: lighten($lighterGrey, 7%);
+			}
+
+			.not-included {
+				text-decoration: line-through;
+				color: $lightGrey;
+			}
+		}
+	}
+
+	.price-tier:last-child {
+		@include span-columns(4 omega, 12);
+	}
+
+	#low-orbit {
+
+	}
+
+	#interplanetary {
+		margin-top: 0;
+		padding-bottom: 2em;
+
+		h3 {
+			margin-top: 0.4em;
+		}
+	}
+}
