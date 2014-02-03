@@ -1,0 +1,10 @@
+---
+first_name: Tom
+last_name: Sims
+email: tom@prospr.ca
+roles:
+  - admin
+password_hash: >
+  $2a$08$Lr.0lT3me/KaPH4BmM9wdeZhxbs1xldjYEUu7n7G5VCf.hj3MjFt.
+password: ""
+---

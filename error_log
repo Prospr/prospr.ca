@@ -1,0 +1,35 @@
+[11-Jan-2014 23:02:18 UTC] PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'RecursiveDirectoryIterator::__construct(/home/prosprca/public_html/_config): failed to open dir: Permission denied' in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php:49
+Stack trace:
+#0 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php(49): RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608)
+#1 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Adapter/PhpAdapter.php(35): Symfony\Component\Finder\Iterator\RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608, false)
+#2 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(785): Symfony\Component\Finder\Adapter\PhpAdapter->searchInDirectory('/home/prosprca/...')
+#3 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(692): Symfony\Component\Finder\Finder->searchInDirectory('/home/prosprca/...')
+#4 [internal fu in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php on line 49
+[11-Jan-2014 23:02:42 UTC] PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'RecursiveDirectoryIterator::__construct(/home/prosprca/public_html/_config): failed to open dir: Permission denied' in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php:49
+Stack trace:
+#0 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php(49): RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608)
+#1 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Adapter/PhpAdapter.php(35): Symfony\Component\Finder\Iterator\RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608, false)
+#2 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(785): Symfony\Component\Finder\Adapter\PhpAdapter->searchInDirectory('/home/prosprca/...')
+#3 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(692): Symfony\Component\Finder\Finder->searchInDirectory('/home/prosprca/...')
+#4 [internal fu in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php on line 49
+[11-Jan-2014 23:02:42 UTC] PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'RecursiveDirectoryIterator::__construct(/home/prosprca/public_html/_config): failed to open dir: Permission denied' in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php:49
+Stack trace:
+#0 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php(49): RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608)
+#1 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Adapter/PhpAdapter.php(35): Symfony\Component\Finder\Iterator\RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608, false)
+#2 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(785): Symfony\Component\Finder\Adapter\PhpAdapter->searchInDirectory('/home/prosprca/...')
+#3 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(692): Symfony\Component\Finder\Finder->searchInDirectory('/home/prosprca/...')
+#4 [internal fu in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php on line 49
+[11-Jan-2014 23:02:49 UTC] PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'RecursiveDirectoryIterator::__construct(/home/prosprca/public_html/_config): failed to open dir: Permission denied' in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php:49
+Stack trace:
+#0 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php(49): RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608)
+#1 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Adapter/PhpAdapter.php(35): Symfony\Component\Finder\Iterator\RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608, false)
+#2 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(785): Symfony\Component\Finder\Adapter\PhpAdapter->searchInDirectory('/home/prosprca/...')
+#3 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(692): Symfony\Component\Finder\Finder->searchInDirectory('/home/prosprca/...')
+#4 [internal fu in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php on line 49
+[11-Jan-2014 23:02:49 UTC] PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'RecursiveDirectoryIterator::__construct(/home/prosprca/public_html/_config): failed to open dir: Permission denied' in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php:49
+Stack trace:
+#0 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php(49): RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608)
+#1 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Adapter/PhpAdapter.php(35): Symfony\Component\Finder\Iterator\RecursiveDirectoryIterator->__construct('/home/prosprca/...', 4608, false)
+#2 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(785): Symfony\Component\Finder\Adapter\PhpAdapter->searchInDirectory('/home/prosprca/...')
+#3 /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Finder.php(692): Symfony\Component\Finder\Finder->searchInDirectory('/home/prosprca/...')
+#4 [internal fu in /home/prosprca/public_html/_app/vendor/Symfony/Component/Finder/Iterator/RecursiveDirectoryIterator.php on line 49
