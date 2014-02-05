@@ -496,6 +496,10 @@ footer[role="contentinfo"]{
 		}
 	}
 
+	.roadmap-desc {
+		@include span-columns(12,12);
+	}
+
 	.quote {
 		@include span-columns(6, 12);
 	}
@@ -555,7 +559,7 @@ footer[role="contentinfo"]{
 			li:nth-child(odd){
 				background: lighten($lighterGrey, 7%);
 			}
-			
+
 
 			.not-included {
 				text-decoration: line-through;

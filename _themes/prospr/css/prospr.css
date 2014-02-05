@@ -1105,12 +1105,18 @@ footer[role="contentinfo"] {
         height: 2em;
         background-color: #005173; }
   /* line 499, ../sass/_modules.scss */
+  .our-approach .roadmap-desc {
+    width: 100%;
+    float: left;
+    margin-right: 1.40845%;
+    display: inline; }
+  /* line 503, ../sass/_modules.scss */
   .our-approach .quote {
     width: 49.29577%;
     float: left;
     margin-right: 1.40845%;
     display: inline; }
-  /* line 502, ../sass/_modules.scss */
+  /* line 506, ../sass/_modules.scss */
   .our-approach .quote:last-child {
     width: 49.29577%;
     float: right;
@@ -1118,12 +1124,12 @@ footer[role="contentinfo"] {
     *margin-left: -1em;
     display: inline; }
 
-/* line 507, ../sass/_modules.scss */
+/* line 511, ../sass/_modules.scss */
 .pricing {
   width: 100%;
   background: white;
   text-align: center; }
-  /* line 512, ../sass/_modules.scss */
+  /* line 516, ../sass/_modules.scss */
   .pricing .price-tier {
     width: 32.39437%;
     float: left;
@@ -1133,7 +1139,7 @@ footer[role="contentinfo"] {
     border: 1px solid #e6e6e6;
     margin-top: 2em;
     margin-bottom: 2em; }
-    /* line 519, ../sass/_modules.scss */
+    /* line 523, ../sass/_modules.scss */
     .pricing .price-tier h3 {
       border: none;
       padding: 0;
@@ -1141,48 +1147,48 @@ footer[role="contentinfo"] {
       margin-top: 1em;
       color: #91b766;
       font-size: 3em; }
-      /* line 527, ../sass/_modules.scss */
+      /* line 531, ../sass/_modules.scss */
       .pricing .price-tier h3 small {
         display: inline;
         font-size: 0.5em; }
-    /* line 533, ../sass/_modules.scss */
+    /* line 537, ../sass/_modules.scss */
     .pricing .price-tier h4 {
       text-transform: uppercase;
       font-family: proxima-nova, sans-serif; }
-    /* line 538, ../sass/_modules.scss */
+    /* line 542, ../sass/_modules.scss */
     .pricing .price-tier h5 {
       text-transform: uppercase;
       padding: 0.75em 0;
       background: #3c838f;
       color: white; }
-    /* line 545, ../sass/_modules.scss */
+    /* line 549, ../sass/_modules.scss */
     .pricing .price-tier ul {
       list-style: none;
       padding: 0; }
-      /* line 549, ../sass/_modules.scss */
+      /* line 553, ../sass/_modules.scss */
       .pricing .price-tier ul li {
         display: block;
         font-size: 1.2em;
         line-height: 2em; }
-      /* line 555, ../sass/_modules.scss */
+      /* line 559, ../sass/_modules.scss */
       .pricing .price-tier ul li:nth-child(odd) {
         background: #f7f7f7; }
-      /* line 560, ../sass/_modules.scss */
+      /* line 564, ../sass/_modules.scss */
       .pricing .price-tier ul .not-included {
         text-decoration: line-through;
         color: #bfbfbf; }
-  /* line 567, ../sass/_modules.scss */
+  /* line 571, ../sass/_modules.scss */
   .pricing .price-tier:last-child {
     width: 32.39437%;
     float: right;
     margin-right: 0;
     *margin-left: -1em;
     display: inline; }
-  /* line 575, ../sass/_modules.scss */
+  /* line 579, ../sass/_modules.scss */
   .pricing #interplanetary {
     margin-top: 0;
     padding-bottom: 2em; }
-    /* line 579, ../sass/_modules.scss */
+    /* line 583, ../sass/_modules.scss */
     .pricing #interplanetary h3 {
       margin-top: 0.4em; }
 
