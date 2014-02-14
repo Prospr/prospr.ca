@@ -109,6 +109,11 @@ input[type="submit"]{
 	border: none;
 }
 
+input[type="checkbox"] {
+	display: inline;
+	width: 2em;
+}
+
 input[type="submit"]:hover {
 	background-color: $seagreen;
 	color: $darkblue;

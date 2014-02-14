@@ -1,3 +1,4 @@
+{{ if current_url == "" or current_url == "/about" or current_url == "/our-approach" or current_url == "/pricing" or current_url == "/contact" }}
 <nav role="navigation">
   <ul class="nav">
     <li><a href="{{ homepage }}"{{ if !segment_1 }} class="current"{{ endif }} data-25p="color: rgba(255,255,255,1); " data-50p="color: rgba(9,56,68,1)">Home</a></li>
@@ -8,6 +9,18 @@
     {{ /nav }}
   </ul>
 </nav>
+{{ else }}
+<nav role="navigation">
+  <ul class="nav">
+    <li><a href="{{ homepage }}"{{ if !segment_1 }} class="current"{{ endif }}>Home</a></li>
+    {{ nav from="/" max_depth="2" }}
+    <li>
+      <a href="{{ url }}"{{ if is_current || is_parent }} class="current"{{ endif }}>{{ title }}</a>
+    </li>
+    {{ /nav }}
+  </ul>
+</nav>
+{{ endif }}
 
 {{# 
 ====================================
