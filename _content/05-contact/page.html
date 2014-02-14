@@ -7,8 +7,69 @@ alt_title: ""
 _template: blankpage
 ---
 
+<div class="bgimg"><div id="ct-bg"></div></div>
 <div class="splash">
   <div class="wrapper">
-    
+    <div class="splash-content container" data-0="opacity: 1;" data-50p="opacity: 0;">
+      <h1>We're here to answer questions and we'd love to hear yours. </h1>
+      <h1>One email can be the start of a wonderful partnership.</h1>
+    </div>
+  </div>
+</div>
+<div class="contact">
+  <div class="container">
+    <h2>How can my business succeed online?</h2>
+    <h3>Who makes the best burgers on the Danforth?</h3>
+    <div class="contact-form">
+      <p>
+        Prospr was founded only recently, so we don't have a proper office yet! Fortunately, 
+        that suits us just fine. Work with us, and we'll meet somehwere that works for you. 
+        We love visiting our clients' workspaces or stores - that way we get an even better
+        idea of how to make your website match your philosophies.
+      </p>
+      <h4>Send us a message.</h4>
+      <h5>We'll respond within an hour.</h5>
+      {{ email_form subject="Contact Form" to="contact@prospr.ca" required="name" }}
+          {{ if error}}
+            <h1>Error</h1>
+            <ul>
+            {{ errors }}
+              <li>{{error}}</li>
+            {{ /errors }}
+            </ul>
+          {{ endif }}
+
+          {{ if success }}
+            <p>Your message has been sent!</p>
+          {{ else }}
+            <div>
+              <label for="name">Your Name:</label>
+              <input type="text" name="name" id="name" placeholder="First Last">
+            </div>
+            <div>
+              <label for="from">Email:</label>
+              <input type="email" name="from" id="from" placeholder="your-email@weloveprospr.com">
+            </div>
+            <div>
+              <label for="phone">Phone:</label>
+              <input type="tel" name="phone" id="phone" placeholder="(###) ###-####">
+            </div>
+            <div>
+              <label for="desc">Let us know about your business:</label>
+              <textarea type="text" name="desc" id="desc" placeholder="Hello Prospr, let's talk!"></textarea>
+            </div>
+            <div><input type="submit" value="Send"></div>
+          {{ endif }}
+        {{ /email_form }}
+    </div>
+    <div class="contact-info">
+      <ul>
+        <li><i class="fa fa-phone"></i> (647) 909-1671</li>
+        <li><i class="fa fa-envelope"></i> contact@prospr.ca</li>
+        <li><i class="fa fa-twitter"></i> @ProsprToronto</li>
+        <li><i class="fa fa-facebook"></i> @ProsprToronto</li>
+        <li><i class="fa fa-google-plus"></i> #Prospr</li>
+      </ul>
+    </div>
   </div>
 </div>

@@ -88,7 +88,7 @@ _template: blankpage
       <h3>It depends what you need, but we're always reasonable.</h3>
       <div class="quote">
         <h4>I want a fantastic new site!</h4>
-        <h5>Contact us for a free initial consultation!</h5>
+        <h5>Contact us for a free initial consultation.</h5>
         {{ email_form subject="Contact Form" to="contact@prospr.ca" required="name" }}
           {{ if error}}
             <h1>Error</h1>
@@ -108,7 +108,7 @@ _template: blankpage
             </div>
             <div>
               <label for="from">Email:</label>
-              <input type="email" name="from" id="from" placeholder="youremail@weloveprospr.com">
+              <input type="email" name="from" id="from" placeholder="your-email@weloveprospr.com">
             </div>
             <div>
               <label for="phone">Phone:</label>
@@ -116,16 +116,17 @@ _template: blankpage
             </div>
             <div>
               <label for="desc">Let us know about your business:</label>
-              <textarea type="text" name="desc" id="desc" placeholder="Hello Prospr, I need a new site!"></textarea>
+              <textarea type="text" name="desc" id="desc" placeholder="Hello Prospr, let's talk!"></textarea>
             </div>
-            <div><input type="submit"></div>
+            <div><input type="submit" value="Send"></div>
           {{ endif }}
         {{ /email_form }}
       </div>
       <div class="quote">
         <h4>I've got a site, but I need effective SEO!</h4>
-        <a href="/pricing">Check out our monthly pricing.</a>
-        <a href="/free-quote">Or contact us for a free quote!</a>
+        <h5>You've got options!<br> Subscribe to a monthly plan or get a custom quote.</h5>
+        <a href="/pricing">Monthly pricing</a>
+        <a href="/contact/free-quote">Free quote</a>
       </div>
     </div>
   </div>

@@ -258,7 +258,6 @@ footer[role="contentinfo"]{
 	}
 }
 
-
 .bgimg {
 	width: 100%;
 	height: 100%;
@@ -279,6 +278,11 @@ footer[role="contentinfo"]{
 #oa-bg {
 	background: url("/assets/img/our-approach-bg.jpg");
 	background-size: cover;
+}
+
+#ct-bg {
+	width: 100%;
+	height: 100%;
 }
 
 .team-members {
@@ -383,7 +387,7 @@ footer[role="contentinfo"]{
 			label {
 				position: absolute;
 				right: 0.5em;
-				top: -1.2em;
+				top: -1.7em;
 				font-size: 1.2em;
 				text-transform: uppercase;
 			}
@@ -497,14 +501,28 @@ footer[role="contentinfo"]{
 	}
 
 	.roadmap-desc {
-		@include span-columns(12,12);
+		@include span-columns (12,12);
 	}
 
 	.quote {
-		@include span-columns(6, 12);
+		@include span-columns (6, 12);
+
+		a {
+			@include border-radius (0.3em);
+			display: block;
+			padding: 1em 0.6em;
+			margin: 3.5em auto;
+			background: $accent2;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.5em;
+			font-weight: 300;
+			color: $white;
+			width: 50%;
+		}
 	}
 	.quote:last-child {
-		@include span-columns(6 omega, 12);
+		@include span-columns (6 omega, 12);
 	}
 }
 
@@ -582,6 +600,61 @@ footer[role="contentinfo"]{
 
 		h3 {
 			margin-top: 0.4em;
+		}
+	}
+}
+
+.contact {
+	width: 100%;
+	background-color: $white;
+	text-align: center;
+	
+	.contact-form {
+		@include span-columns (7, 12);
+		text-align: left;
+		font-size: 1.1em;
+	}
+
+	.contact-info {
+		@include span-columns (4 omega, 12);
+		text-align: left;
+
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+				font-size: 2em;
+				font-weight: 300;
+				margin: 0.75em 0;
+
+				i {
+					width: 2em;
+					text-align: center;
+					font-weight: 400;
+
+				}
+
+				.fa-facebook {
+					color: #3b5998;
+				}
+
+				.fa-twitter {
+					color: #00aced;
+				}
+
+				.fa-google-plus {
+					color: #dd4b39;
+				}
+
+				.fa-phone {
+					color: $accent1;
+				}
+
+				.fa-envelope {
+					color: $accent2;
+				}
+			}
 		}
 	}
 }

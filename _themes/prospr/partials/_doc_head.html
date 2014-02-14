@@ -34,7 +34,12 @@
 <script type="text/javascript" src="//use.typekit.net/cva6seg.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-<!-- analytics -->
+{{ if current_url == "/contact"}}
+<!-- Google Maps API -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ4wZrMUG9hvrkZ8Disc5Hkj137_O2F5s&sensor=true"></script>
+{{ endif }}
+
+<!-- Analytics -->
 {{ theme:partial src="_analytics" }}
 
 </head>
