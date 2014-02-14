@@ -91,7 +91,7 @@ class Plugin_email_form extends Plugin {
 
     // From is always required
     if ( ! isset($input['from']) or ! filter_var($input['from'], FILTER_VALIDATE_EMAIL)) {
-      $this->validation[0]['error'] = 'From is required';
+      $this->validation[0]['error'] = 'Email is required';
     }
 
     // Username is never required

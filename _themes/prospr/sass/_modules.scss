@@ -509,16 +509,26 @@ footer[role="contentinfo"]{
 
 		a {
 			@include border-radius (0.3em);
+			@include single-transition (all, 0.2s, ease);
+			@include single-box-shadow (inset, -2px, -2px, rgba($black, 0.2));
 			display: block;
-			padding: 1em 0.6em;
-			margin: 3.5em auto;
-			background: $accent2;
+			padding: 0.25em 0.6em;
+			margin: 1.85em auto;
+			background: $darkblue;
 			text-decoration: none;
-			text-transform: uppercase;
 			font-size: 1.5em;
 			font-weight: 300;
 			color: $white;
 			width: 50%;
+		}
+
+		a:hover {
+			background-color: $seagreen;
+			color: $darkblue;
+		}
+
+		a:active {
+			@include single-box-shadow (inset, -2px, -2px, rgba($black, 0));
 		}
 	}
 	.quote:last-child {

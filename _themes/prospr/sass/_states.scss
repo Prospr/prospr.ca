@@ -16,3 +16,20 @@
 .no-svg #prospr-logo {
   background-image: url("/assets/img/negative-logo.png");
 }
+
+// Error state for email submits (missing data)
+form {
+
+  h1 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    color: $ochre;
+    text-align: left;
+  }
+
+  ul {
+    margin: 0;
+    color: $ochre;
+    text-align: left;
+  }
+}
